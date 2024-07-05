@@ -1,0 +1,24 @@
+<div id="myModal" class="modal">
+   <!-- Modal content -->
+   <div class="modal-content">
+      <div  class="modal-content-image" style="background-image: url('${properties.backgroundImage @context='unsafe'}');">
+         <div class="modal-content-close">
+            <span class="modal-content-close-icon" id="btn-design">&times;</span>
+         </div>
+         <div class="modal-content-image-text">
+            <h2 >${properties.title @context='html'}</h2>
+            <h2 >${properties.description @context='html'}</h2>
+            <div class="modal-content-image-button-gap">
+               <a href="${properties.buttonOneLink}.html"><button class="modal-content-image-button-gap-column">${properties.buttonOne}</button></a>
+               <a href="${properties.buttonTwoLink}.html"><button class="modal-content-image-button-gap-column">${properties.buttonTwo}</button></a>
+            </div>
+            <div class="modal-content-image-thanks">
+                <div class="modal-content-image-thanks-pop" style="display: flex; justify-content: space-between;">
+                  <a id="thanks" class="modal-content-image-thanks-pop-link" href="#">${properties.thanks @context='html'}</a>
+                </div>
+               		<div>${properties.finalDescription @context='html'}</div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

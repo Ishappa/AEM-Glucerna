@@ -163,7 +163,7 @@
                                     <goal>install</goal>
                                 </goals>
                                 <configuration>
-                                    <targetURL>http://${aem.publish.host}:${aem.publish.port}/crx/packmgr/service.jsp</targetURL>
+                                    <targetURL>http://localhost:4502/crx/packmgr/service.jsp</targetURL>
                                     <failOnError>true</failOnError>
                                 </configuration>
                             </execution>

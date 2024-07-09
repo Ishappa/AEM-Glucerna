@@ -5,7 +5,7 @@
 <div class="finalfooter_main_container">
   <div class="logo_container">
     <div>
-      <img class="logo_img" src="${footer.file}" />
+      <a href="${footer.link}" target="${properties.openInNewTab}"><img class="logo_img" src="${footer.file}" /></a>
     </div>
 
     <div class="logo_img">
@@ -13,7 +13,7 @@
 
       <div>
         <sly data-sly-list.footerItems="${footer.fields}">
-          <img class="footer_icons" src="${footerItems.file}" />
+         <a href="${footerItems.link}" target="${footerItems.openInNewTab}"> <img class="footer_icons" src="${footerItems.file}" /></a>
         </sly>
       </div>
     </div>
@@ -21,7 +21,7 @@
 
   <div class="policy_container">
     <sly data-sly-list.policyItems="${footer.field1}">
-      <a>${policyItems.policyContent}</a>
+      <a href="${policyItems.link}" target="${policyItems.openInNewTab}">${policyItems.policyContent}</a>
     </sly>
   </div>
 

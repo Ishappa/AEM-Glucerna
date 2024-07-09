@@ -11,7 +11,21 @@ public class IconFields {
     @ValueMapValue
     private String file;
 
+    @ValueMapValue
+    private String link;
+
+    @ValueMapValue
+    private String openInNewTab;
+
+    public String getOpenInNewTab() {
+        return openInNewTab;
+    }
+
     public String getFile() {
         return file;
     }
+    public String getLink() {
+        return link;
+    }
+
 }

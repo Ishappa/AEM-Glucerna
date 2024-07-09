@@ -1,7 +1,7 @@
 .finalfooter_main_container {
   background-color: #002d72;
   color: #fff;
-  height: 180px;
+  height: 200px;
 }
 
 .logo_container {
@@ -15,6 +15,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  padding-top: 35px;
 }
 
 .policy_container {
@@ -28,6 +29,7 @@
   padding-right: 16px;
   color: #fff;
   font-size: 12px;
+  text-decoration: none;
 }
 
 .policy_container a:hover {
@@ -39,9 +41,9 @@
   cursor: pointer;
 }
 
-.logo_container img {
-  margin-top: 15px;
-}
+// .logo_container img {
+//   margin-top: 15px;
+// }
 
 .footer_icons {
   margin-left: 10px;
@@ -62,6 +64,7 @@
   color: #fff;
   font-size: 12px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {

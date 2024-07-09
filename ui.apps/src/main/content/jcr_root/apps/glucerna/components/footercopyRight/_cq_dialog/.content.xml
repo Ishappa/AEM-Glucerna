@@ -24,6 +24,17 @@
                                 name="./file"
                                 required="{Boolean}true"
                                 rootPath="/content/dam"/>
+                            <logoLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Logo-path"
+                                name="./link"/>
+                            <openNewTab
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./openInNewTab"
+                                text="Open in new tab"
+                                value="_blank"/>
                             <stayConnect
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -46,6 +57,17 @@
                                             name="./file"
                                             required="{Boolean}true"
                                             rootPath="/content/dam"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="path"
+                                            name="./link"/>
+                                        <openNewTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./openInNewTab"
+                                            text="Open in new tab"
+                                            value="_blank"/>
                                     </items>
                                 </field>
                             </iconsMulitifield>
@@ -70,6 +92,17 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             fieldLabel="Policy Content"
                                             name="./policyContent"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="path"
+                                            name="./link"/>
+                                        <openNewTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./openInNewTab"
+                                            text="Open in new tab"
+                                            value="_blank"/>
                                     </items>
                                 </field>
                             </policyMulitifield>

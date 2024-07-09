@@ -35,6 +35,17 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             fieldLabel="List-Items"
                                             name="./itemName"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="path"
+                                            name="./link"/>
+                                        <openNewTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./openInNewTab"
+                                            text="Open in new tab"
+                                            value="_blank"/>
                                     </items>
                                 </field>
                             </multifield>
@@ -59,6 +70,17 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             fieldLabel="List-Items"
                                             name="./itemName"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="path"
+                                            name="./link"/>
+                                        <openNewTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./openInNewTab"
+                                            text="Open in new tab"
+                                            value="_blank"/>
                                     </items>
                                 </field>
                             </multifield>
@@ -88,6 +110,17 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             fieldLabel="List-Items"
                                             name="./itemName"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="path"
+                                            name="./link"/>
+                                        <openNewTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./openInNewTab"
+                                            text="Open in new tab"
+                                            value="_blank"/>
                                     </items>
                                 </field>
                             </multifield>
@@ -117,6 +150,17 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             fieldLabel="List-Items"
                                             name="./itemName"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="path"
+                                            name="./link"/>
+                                        <openNewTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./openInNewTab"
+                                            text="Open in new tab"
+                                            value="_blank"/>
                                     </items>
                                 </field>
                             </multifield>
@@ -141,6 +185,17 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             fieldLabel="List-Items"
                                             name="./itemName"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="path"
+                                            name="./link"/>
+                                        <openNewTab
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./openInNewTab"
+                                            text="Open in new tab"
+                                            value="_blank"/>
                                     </items>
                                 </field>
                             </multifield>

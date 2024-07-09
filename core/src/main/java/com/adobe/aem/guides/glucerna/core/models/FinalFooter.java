@@ -21,6 +21,9 @@ public class FinalFooter {
     private String file;
 
     @ValueMapValue
+    private String link;
+
+    @ValueMapValue
     private String text;
 
     @ValueMapValue
@@ -44,5 +47,8 @@ public class FinalFooter {
 
     public String getCopyRight() {
         return copyRight;
+    }
+    public String getLink() {
+        return link;
     }
 }

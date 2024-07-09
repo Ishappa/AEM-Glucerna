@@ -11,8 +11,23 @@ public class FooterFields {
     @ValueMapValue
     private String itemName;
 
+    @ValueMapValue
+    private String link;
+
+    @ValueMapValue
+    private String openInNewTab;
+
+    public String getOpenInNewTab() {
+        return openInNewTab;
+    }
+
+  
     public String getItemName() {
         return itemName;
+    }
+
+    public String getLink() {
+        return link;
     }
 
 }

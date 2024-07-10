@@ -1,0 +1,33 @@
+<div class="card_feature_parent">
+    <div class="card_feauture" data-sly-use.mymodel="com.adobe.aem.guides.glucerna.core.models.CardFeature">
+        <div class="card_feauture_left">
+            <div class="card_feature_left_title">
+                <p style="margin:0px;">${mymodel.featureTitle}</p>
+            </div>
+        </div>
+        <div class="card_feauture_right videoTrigger" data-modal-id="modal-${mymodel.uniqueId}" data-enablepopup="${mymodel.select=='video'? 'true':'false'}">
+            <sly data-sly-test="${mymodel.select=='video'}" data-sly-unwrap>
+                <img src="${mymodel.poster}" alt="Video Thumbnail">
+            </sly>
+            <sly data-sly-test="${mymodel.select=='pdf'}">
+                <a href="${mymodel.pdfpath}" target="${mymodel.isSameTab}">
+                    <img src="${mymodel.poster}" alt="PDF Thumbnail">
+                </a>
+            </sly>
+        </div>
+    </div>
+</div>
+
+<div id="modal-${mymodel.uniqueId}" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close" data-close="modal-${mymodel.uniqueId}">&#x2715;</span>
+        </div>
+        <div class="modal-body" style="position:relative;">
+            <sly data-sly-test="${mymodel.select=='video'}">
+                <div class="video-div" data-sly-resource.jj="${'some_ids' @ resourceType='glucerna/components/videocomponent'}"></div>
+                <div class="play-butn-css"><span style="font-size:50px;margin-left: 12%;">&#9654;</span></div>
+            </sly>
+        </div>
+    </div>
+</div>

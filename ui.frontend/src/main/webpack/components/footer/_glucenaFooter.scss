@@ -1,27 +1,40 @@
 .main_container {
   background-color: #002d72;
   height: 250px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+footer.experiencefragment {
+  background-color: #002d72;
 }
 
 .parent_container {
   display: flex;
-  justify-content: space-evenly;
-  margin-right: 200px;
-  margin-left: 130px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  justify-content: space-between;
+  margin: 40px auto;
   padding-top: 33px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding-left: 30px;
 }
 
 .items2,
 .items5 {
   margin-top: 48px;
 }
+.list {
+  width: 200px;
+  height: 150px;
+}
+.hidden_items2,
+.hidden_items5 {
+  display: none !important;
+}
 
 .parent_container a {
   display: block;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 32px;
   text-decoration: none;
 }
@@ -67,18 +80,18 @@
 @media only screen and (max-width: 768px) {
   .main_container {
     height: auto;
+    max-width: 100%;
   }
 
   .parent_container {
     display: block;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .list {
     margin: 0 16px;
+    width: auto;
+    height: auto;
   }
 
   .list h6 {
@@ -94,7 +107,7 @@
   }
 
   .list.active a {
-    display: block;
+    display: block !important;
   }
 
   .items2,
@@ -110,7 +123,12 @@
   .items4 .items5 {
     display: block;
   }
+  // .hidden_items2,
+  // .hidden_items5 {
+  //   display: block !important;
+  // }
 }
+
 @media screen and (max-width: 350px) {
   .main_container {
     padding: 20px 40px;

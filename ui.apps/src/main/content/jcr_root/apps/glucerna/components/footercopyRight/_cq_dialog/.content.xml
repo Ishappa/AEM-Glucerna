@@ -34,7 +34,7 @@
                                 sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
                                 name="./openInNewTab"
                                 text="Open in new tab"
-                                value="_blank"/>
+                                value="{Boolean}true"/>
                             <stayConnect
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -62,12 +62,12 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             fieldLabel="path"
                                             name="./link"/>
-                                        <openNewTab
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                            name="./openInNewTab"
-                                            text="Open in new tab"
-                                            value="_blank"/>
+                                         <openNewTab
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./openInNewTab"
+                                text="Open in new tab"
+                                value="{Boolean}true"/>
                                     </items>
                                 </field>
                             </iconsMulitifield>
@@ -97,12 +97,12 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             fieldLabel="path"
                                             name="./link"/>
-                                        <openNewTab
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                            name="./openInNewTab"
-                                            text="Open in new tab"
-                                            value="_blank"/>
+                                         <openNewTab
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./openInNewTab"
+                                text="Open in new tab"
+                                value="{Boolean}true"/>
                                     </items>
                                 </field>
                             </policyMulitifield>

@@ -14,12 +14,12 @@ public class PolicyFields {
     @ValueMapValue
     private String link;
 
-    @ValueMapValue
-    private String openInNewTab;
+    // @ValueMapValue
+    // private String openInNewTab;
 
-    public String getOpenInNewTab() {
-        return openInNewTab;
-    }
+    // public String getOpenInNewTab() {
+    //     return openInNewTab;
+    // }
 
 
     public String getPolicyContent() {

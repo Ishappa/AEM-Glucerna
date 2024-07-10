@@ -2,30 +2,45 @@
   data-sly-use.footer="com.adobe.aem.guides.glucerna.core.models.FinalFooter"
 />
 
-<div class="finalfooter_main_container">
-  <div class="logo_container">
-    <div>
-      <a href="${footer.link}" target="${properties.openInNewTab}"><img class="logo_img" src="${footer.file}" /></a>
-    </div>
-
-    <div class="logo_img">
-      <h4>${footer.text}</h4>
-
+<div class="finalfooter">
+  <div class="finalfooter_main_container">
+    <div class="logo_container">
       <div>
-        <sly data-sly-list.footerItems="${footer.fields}">
-         <a href="${footerItems.link}" target="${footerItems.openInNewTab}"> <img class="footer_icons" src="${footerItems.file}" /></a>
-        </sly>
+        <a
+          href="${footer.link}"
+          target="${footerItems.openInNewTab ? '_blank' : '_self'}"
+          ><img class="logo_img" src="${footer.file}"
+        /></a>
+      </div>
+
+      <div class="logo_img">
+        <h4>${footer.text}</h4>
+
+        <div>
+          <sly data-sly-list.footerItems="${footer.fields}">
+            <a
+              href="${footerItems.link}"
+              target="${footerItems.openInNewTab ? '_blank' : '_self'}"
+            >
+              <img class="footer_icons" src="${footerItems.file}"
+            /></a>
+          </sly>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="policy_container">
-    <sly data-sly-list.policyItems="${footer.field1}">
-      <a href="${policyItems.link}" target="${policyItems.openInNewTab}">${policyItems.policyContent}</a>
-    </sly>
-  </div>
+    <div class="policy_container">
+      <sly data-sly-list.policyItems="${footer.field1}">
+        <a
+          href="${policyItems.link}"
+          target="${policyItems.openInNewTab ? '_blank' : '_self'}"
+          >${policyItems.policyContent}</a
+        >
+      </sly>
+    </div>
 
-  <div class="copyRight_container">
-    <p>${footer.copyRight}</p>
+    <div class="copyRight_container">
+      <p>${footer.copyRight}</p>
+    </div>
   </div>
 </div>

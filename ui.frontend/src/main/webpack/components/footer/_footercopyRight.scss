@@ -1,15 +1,21 @@
-.finalfooter_main_container {
+.finalfooter {
   background-color: #002d72;
   color: #fff;
+}
+
+.finalfooter_main_container {
   height: 200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  // padding: 20px;
+  box-sizing: border-box;
+  padding: 25px 30px;
 }
 
 .logo_container {
   display: flex;
   justify-content: space-between;
-  margin-right: 200px;
-  margin-left: 280px;
-  box-sizing: border-box;
+  // margin: 0px 10px;
   border-top: 2px solid;
   font-family: "brandon_textblack", sans-serif;
   font-style: normal;
@@ -21,14 +27,13 @@
 .policy_container {
   display: flex;
   justify-content: end;
-  margin-right: 200px;
-  margin-top: 30px;
+  margin: 30px -6px 0;
 }
 
 .policy_container a {
   padding-right: 16px;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -40,10 +45,6 @@
 .logo_img:hover {
   cursor: pointer;
 }
-
-// .logo_container img {
-//   margin-top: 15px;
-// }
 
 .footer_icons {
   margin-left: 10px;
@@ -60,51 +61,74 @@
 }
 
 .copyRight_container {
-  margin-left: 280px;
+  margin: 30px 10px;
   color: #fff;
   font-size: 12px;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }
-
 @media screen and (max-width: 768px) {
   .finalfooter_main_container {
     height: auto;
-    padding: 20px; /* Adjust padding for better mobile view */
+    padding: 20px;
+    max-width: 100%;
   }
 
   .logo_container {
-    text-align: center;
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .policy_container {
-    justify-content: start;
-    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid;
+    font-family: "brandon_textblack", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 35px;
   }
 
   .logo_img h4 {
     display: none;
   }
 
+  .policy_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0 0;
+  }
+
+  .policy_container a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .policy_container a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   .logo_img {
+    display: flex;
     margin-bottom: 10px;
   }
 
+  .footer_icons {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+  }
+
   .copyRight_container {
-    margin-left: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 350px) {
   .policy_container {
     display: block;
-    margin-right: 0;
-    margin-top: 0;
-  }
-  .finalfooter_main_container {
-    padding: 20px 40px;
+    margin: 0;
   }
 
   .logo_img {
@@ -112,15 +136,19 @@
   }
 
   .logo_container img {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 
   .policy_container a {
     display: block;
     padding-top: 36px;
   }
+
   .copyRight_container {
     padding-top: 26px;
+  }
+
+  .finalfooter_main_container {
+    padding: 20px 40px;
   }
 }

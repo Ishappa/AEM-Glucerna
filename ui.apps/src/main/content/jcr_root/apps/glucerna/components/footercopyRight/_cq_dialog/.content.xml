@@ -63,11 +63,11 @@
                                             fieldLabel="path"
                                             name="./link"/>
                                          <openNewTab
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                name="./openInNewTab"
-                                text="Open in new tab"
-                                value="{Boolean}true"/>
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./openInNewTab"
+                                            text="Open in new tab"
+                                            value="{Boolean}true"/>
                                     </items>
                                 </field>
                             </iconsMulitifield>
@@ -98,11 +98,11 @@
                                             fieldLabel="path"
                                             name="./link"/>
                                          <openNewTab
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                name="./openInNewTab"
-                                text="Open in new tab"
-                                value="{Boolean}true"/>
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            name="./openInNewTab"
+                                            text="Open in new tab"
+                                            value="{Boolean}true"/>
                                     </items>
                                 </field>
                             </policyMulitifield>

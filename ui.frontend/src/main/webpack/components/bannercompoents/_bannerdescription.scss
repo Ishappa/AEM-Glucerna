@@ -23,9 +23,13 @@
     object-fit: cover;
 }
 .button_banner{
-    background-color:yellow;
-    letter-spacing: 5px;
-    padding: 5px 22px;
+        background-color: #ffd100;
+        border: 2px solid #ffd100;
+        letter-spacing: 5px;
+        padding: 10px 24px;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 700;
 }
 .title_detials{
     font-size: larger;

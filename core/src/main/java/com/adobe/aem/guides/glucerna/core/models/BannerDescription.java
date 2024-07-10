@@ -12,7 +12,7 @@ import lombok.Getter;
 public class BannerDescription {
 
     @ValueMapValue
-    private String logoReference;
+    private String logo;
 
     @ValueMapValue
     private String titledetails;
@@ -29,5 +29,10 @@ public class BannerDescription {
     @ValueMapValue
     private String backgroundimage;
 
+    @ValueMapValue
+    private String buttonlink;
+
+    @ValueMapValue
+    private String targetcheckbox;
 
 }

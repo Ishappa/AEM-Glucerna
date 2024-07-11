@@ -1,0 +1,13 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<sly data-sly-use.parsysModel="com.adobe.aem.guides.glucerna.core.models.ParsysModel">
+    <div class="rows" id="${parsysModel.id}">
+        <div class="container_items">
+            <sly data-sly-list.ratios="${parsysModel.columnRatios}">
+                <div class="col-md-${ratios}">
+                    <div class="responsiveGrid" data-sly-resource="${ratiosList.index @ resourceType='wcm/foundation/components/parsys'}">
+                    </div>
+                </div>
+            </sly>   
+        </div>
+    </div>
+</sly>

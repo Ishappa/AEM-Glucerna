@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <selectParsys
+                        granite:class="cq-dialog-dropdown-showhide"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Number of Parsys to Display"
+                        name="./parsys">
+                        <items jcr:primaryType="nt:unstructured">
+                            <twoparsys
+                                jcr:primaryType="nt:unstructured"
+                                name="./twoparsys"
+                                text="Two Parsys"
+                                value="twoparsys"/>
+                            <threeparsys
+                                jcr:primaryType="nt:unstructured"
+                                name="./threeparsys"
+                                text="Three Parsys"
+                                value="threeparsys"/>
+                            <fourparsys
+                                jcr:primaryType="nt:unstructured"
+                                name="./fourparsys"
+                                text="Four Parsys"
+                                value="fourparsys"/>
+                            <fiveparsys
+                                jcr:primaryType="nt:unstructured"
+                                name="./fiveparsys"
+                                text="Five Parsys"
+                                value="fiveparsys"/>
+                        </items>
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-dialog-dropdown-showhide-target=".showhidetargets"/>
+                    </selectParsys>
+                    <twoparsys
+                        granite:class="showhidetargets"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <parsysRatio
+                                granite:class="cq-dialog-dropdown-showhide"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Ratio Of Parsys"
+                                name="./tworatios">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <empty
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./empty"
+                                        text="Select "
+                                        value="\0"/>
+                                    <_x0034_-8
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./one"
+                                        text="4:8"
+                                        value="4:8"/>
+                                    <_x0038_-4
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./two"
+                                        text="8:4"
+                                        value="8:4"/>
+                                    <_x0036_-6
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./three"
+                                        text="6:6"
+                                        value="6:6"/>
+                                </items>
+                            </parsysRatio>
+                            <id
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Id"
+                                name="./twoparsysId"/>
+                        </items>
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="twoparsys"/>
+                    </twoparsys>
+                    <threeparsys
+                        granite:class="showhidetargets"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <parsysRatio
+                                granite:class="cq-dialog-dropdown-showhide"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Ratio Of Parsys"
+                                name="./threeratios">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <empty
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./empty"
+                                        text="Select "
+                                        value="\0"/>
+                                    <_x0034_-4-4
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./one"
+                                        text="4:4:4"
+                                        value="4:4:4"/>
+                                    <_x0033_-3-6
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./two"
+                                        text="3:3:6"
+                                        value="3:3:6"/>
+                                    <_x0036_-3-3
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./three"
+                                        text="6:3:3"
+                                        value="6:3:3"/>
+                                </items>
+                            </parsysRatio>
+                            <id
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Id"
+                                name="./threeparsysId"/>
+                        </items>
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="threeparsys"/>
+                    </threeparsys>
+                    <fourparsys
+                        granite:class="showhidetargets"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <parsysRatio
+                                granite:class="cq-dialog-dropdown-showhide"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Ratio Of Parsys"
+                                name="./fourratios">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <empty
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./empty"
+                                        text="Select "
+                                        value="\0"/>
+                                    <_x0033_-3-3-3
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./one"
+                                        text="3:3:3:3"
+                                        value="3:3:3:3"/>
+                                    <_x0032_-2-4-4
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./two"
+                                        text="2:2:4:4"
+                                        value="2:2:4:4"/>
+                                    <_x0034_-4-2-2
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./three"
+                                        text="4:4:2:2"
+                                        value="4:4:2:2"/>
+                                </items>
+                            </parsysRatio>
+                            <id
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Id"
+                                name="./fourparsysId"/>
+                        </items>
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="fourparsys"/>
+                    </fourparsys>
+                    <fiveparsys
+                        granite:class="showhidetargets"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <parsysRatio
+                                granite:class="cq-dialog-dropdown-showhide"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Ratio Of Parsys"
+                                name="./fiveratios">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <empty
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./empty"
+                                        text="Select "
+                                        value="12"/>
+                                    <_x0038_-4-4-4-4
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./one"
+                                        text="8:4:4:4:4"
+                                        value="8:4:4:4:4"/>
+                                </items>
+                            </parsysRatio>
+                            <id
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Id"
+                                name="./fiveparsysId"/>
+                        </items>
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="fiveparsys"/>
+                    </fiveparsys>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

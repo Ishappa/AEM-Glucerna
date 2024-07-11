@@ -45,9 +45,11 @@
                                             name="./itemName"/>
                                         <link
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldDescription="Redirect URL"
                                             fieldLabel="path"
-                                            name="./link"/>
+                                            name="./link"
+                                            rootPath="/content"/>
                                         <openNewTab
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
@@ -80,9 +82,11 @@
                                             name="./itemName"/>
                                         <link
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldDescription="Redirect URL"
                                             fieldLabel="path"
-                                            name="./link"/>
+                                            name="./link"
+                                            rootPath="/content"/>
                                         <openNewTab
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
@@ -120,9 +124,11 @@
                                             name="./itemName"/>
                                         <link
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldDescription="Redirect URL"
                                             fieldLabel="path"
-                                            name="./link"/>
+                                            name="./link"
+                                            rootPath="/content"/>
                                         <openNewTab
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
@@ -160,9 +166,11 @@
                                             name="./itemName"/>
                                         <link
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldDescription="Redirect URL"
                                             fieldLabel="path"
-                                            name="./link"/>
+                                            name="./link"
+                                            rootPath="/content"/>
                                         <openNewTab
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
@@ -195,9 +203,11 @@
                                             name="./itemName"/>
                                         <link
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldDescription="Redirect URL"
                                             fieldLabel="path"
-                                            name="./link"/>
+                                            name="./link"
+                                            rootPath="/content"/>
                                         <openNewTab
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"

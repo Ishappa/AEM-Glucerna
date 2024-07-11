@@ -24,11 +24,13 @@
                                 name="./file"
                                 required="{Boolean}true"
                                 rootPath="/content/dam"/>
-                            <logoLink
+                            <link
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldDescription="Redirect URL"
                                 fieldLabel="Logo-path"
-                                name="./link"/>
+                                name="./link"
+                                rootPath="/content"/>
                             <openNewTab
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
@@ -59,10 +61,12 @@
                                             rootPath="/content/dam"/>
                                         <link
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldDescription="Redirect URL"
                                             fieldLabel="path"
-                                            name="./link"/>
-                                         <openNewTab
+                                            name="./link"
+                                            rootPath="/content"/>
+                                        <openNewTab
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
                                             name="./openInNewTab"
@@ -94,10 +98,12 @@
                                             name="./policyContent"/>
                                         <link
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldDescription="Redirect URL"
                                             fieldLabel="path"
-                                            name="./link"/>
-                                         <openNewTab
+                                            name="./link"
+                                            rootPath="/content"/>
+                                        <openNewTab
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
                                             name="./openInNewTab"

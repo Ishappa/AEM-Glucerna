@@ -1,0 +1,42 @@
+.card_container{
+    background-color:white;
+	display:flex;
+    flex-direction:row;
+    margin:auto;
+}
+.variationOne{
+    flex: 0 0 100%;
+    margin-top:24px;
+}
+
+.card_images{
+	justify-content: center;
+    display: flex;
+}
+
+section{
+	text-align: center;
+}
+section > *{
+
+	display:block;
+    font-family: sans-serif;
+	text-decoration:none;
+	font-size: 16px;
+    line-height: 18px;
+
+}
+section > h4{
+
+	color:#002d72;
+    font-weight: 700;
+}
+section > p{
+    color:#002d72;
+}
+
+section > a{
+	color: #009cde;
+	letter-spacing: 1px;
+    font-weight: 700;
+}

@@ -80,9 +80,6 @@ footer.experiencefragment {
 .parent_container button:hover {
   color: #ff0;
 }
-// @media screen and (max-width: 991px) {
-
-// }
 
 @media only screen and (max-width: 991px) {
   .main_container {
@@ -92,6 +89,7 @@ footer.experiencefragment {
 
   .parent_container {
     display: block;
+    padding-right: 30px;
     margin: 0;
   }
 
@@ -104,12 +102,11 @@ footer.experiencefragment {
   .list h6 {
     cursor: pointer;
     margin: 0;
-    padding: 16px 0;
+    margin-bottom: 30px;
   }
 
   .list a {
     display: none;
-    // padding-left: 16px;
     transition: 2s ease in;
   }
 
@@ -139,7 +136,9 @@ footer.experiencefragment {
   .parent_container {
     padding: 0;
   }
+  @media screen and (max-width: 350px) {
+  }
   .list h6 {
-    padding: 10px 0;
+    padding: 0;
   }
 }

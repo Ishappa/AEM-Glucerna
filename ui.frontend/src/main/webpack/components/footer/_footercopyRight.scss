@@ -8,7 +8,7 @@
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 25px 30px;
+  padding: 0px 30px;
 }
 
 .logo_container {
@@ -69,7 +69,8 @@
   .finalfooter_main_container {
     height: auto;
     max-width: 100%;
-    padding: 0px 20px 20px;
+    margin-top: 30px;
+    padding: 0px 45px;
   }
 
   .logo_container {
@@ -134,8 +135,11 @@
     margin: 0;
   }
 
-  .logo_img {
-    width: 90px;
+  // .logo_img {
+  //   width: 90px;
+  // }
+  .finalfooter_main_container {
+    padding: 0px 45px;
   }
 
   .logo_container img {

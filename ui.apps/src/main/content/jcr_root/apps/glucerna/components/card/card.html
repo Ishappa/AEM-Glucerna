@@ -1,0 +1,15 @@
+<sly data-sly-use.cards="com.adobe.aem.guides.glucerna.core.models.Card">
+	
+    <div class="card_container">
+    	<div class="cards variationOne">
+        <div class="card_images">
+        <img class="card_image" src="${cards.image @ context='uri'}" alt="${grid.title}">
+        </div>
+       	<section>
+        <h4>${cards.title}</h4>
+        <p>${cards.description}</p>
+        <a href="${cards.link}" class="button">${cards.linktitle}</a>
+        </section>
+        </div>        
+    </div>
+</sly>

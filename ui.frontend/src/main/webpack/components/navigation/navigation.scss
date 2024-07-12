@@ -33,8 +33,9 @@
   display: none;
 }
 
-.navbar-ul-list:nth-child(6) {
+.navbar-ul-list:nth-child(6) .navbar-ul-title {
   background: #ffd100;
+  display: inline-block;
 }
 .hamburger-bar-where{
    display:none;
@@ -48,24 +49,20 @@
     &-ul {
       display: none;
       padding: 0px;
+      margin:0px;
       margin-left: 30px;
-      width: 100%;
       height: 100%;
       overflow: auto;
       background-color: transparent;
       &-list {
-        width: 100%;
         text-align: left;
         padding: 0px 0px 10px 10px;
         background-color: #fefefe;
         border: 1px solid #888;
-        width: 100%;
         border: none;
-        display: inline-block;
       }
       &-title {
         display: block;
-        width: 100%;
         margin: 0px;
         padding: 2px;
         &:hover {
@@ -82,7 +79,7 @@
 .navbar-position{
     position:absolute;
     margin-top: 0px;
-    width: -webkit-fill-available;
+    width: 100%;
     }
   .hamburger-bar {
      display: flex;
@@ -99,6 +96,8 @@
 
   .open {
     display: flex;
+    position:relative;
+    z-index:999;
   }
   .hamburger-bar-where{
       background-color: yellow;

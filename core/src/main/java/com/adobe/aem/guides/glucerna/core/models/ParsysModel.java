@@ -17,48 +17,35 @@ public class ParsysModel {
     @ValueMapValue(name = "tworatios")
     private String twoRatios;
 
-    @ValueMapValue(name = "twoparsysId")
-    private String twoParsysId;
-
     @ValueMapValue(name = "threeratios")
     private String threeRatios;
-
-    @ValueMapValue(name = "threeparsysId")
-    private String threeParsysId;
 
     @ValueMapValue(name = "fourratios")
     private String fourRatios;
 
-    @ValueMapValue(name = "fourparsysId")
-    private String fourParsysId;
-
     @ValueMapValue(name = "fiveratios")
     private String fiveRatios;
 
-    @ValueMapValue(name = "fiveparsysId")
-    private String fiveParsysId;
+    @ValueMapValue(name = "id")
+    private String id;
+
+    @ValueMapValue(name = "variation")
+    private String variation;
 
     public String getParsys() {
         return parsys;
     }
 
     public String getId() {
-        switch (parsys) {
-            case "twoparsys":
-                return twoParsysId != null ? twoParsysId : "defaultTwoParsysId";
-            case "threeparsys":
-                return threeParsysId != null ? threeParsysId : "defaultThreeParsysId";
-            case "fourparsys":
-                return fourParsysId != null ? fourParsysId : "defaultFourParsysId";
-            case "fiveparsys":
-                return fiveParsysId != null ? fiveParsysId : "defaultFiveParsysId";
-            default:
-                return "defaultParsysId";
-        }
+        return id != null ? id : "defaultParsysId";
+    }
+
+    public String getVariation() {
+        return variation;
     }
 
     public String getTwoRatios() {
-        return twoRatios != null ? twoRatios : "6:6"; // Default to 6:6 if no ratio is provided
+        return twoRatios != null ? twoRatios : "6:6";
     }
 
     public List<Integer> getTwoRatiosList() {
@@ -66,7 +53,7 @@ public class ParsysModel {
     }
 
     public String getThreeRatios() {
-        return threeRatios != null ? threeRatios : "4:4:4"; // Default to 4:4:4 if no ratio is provided
+        return threeRatios != null ? threeRatios : "4:4:4"; 
     }
 
     public List<Integer> getThreeRatiosList() {
@@ -74,7 +61,7 @@ public class ParsysModel {
     }
 
     public String getFourRatios() {
-        return fourRatios != null ? fourRatios : "3:3:3:3"; // Default to 3:3:3:3 if no ratio is provided
+        return fourRatios != null ? fourRatios : "3:3:3:3"; 
     }
 
     public List<Integer> getFourRatiosList() {
@@ -82,7 +69,7 @@ public class ParsysModel {
     }
 
     public String getFiveRatios() {
-        return fiveRatios != null ? fiveRatios : "2:2:2:2:2"; // Default to 2:2:2:2:2 if no ratio is provided
+        return fiveRatios != null ? fiveRatios : "2:2:2:2:2";
     }
 
     public List<Integer> getFiveRatiosList() {
@@ -96,7 +83,7 @@ public class ParsysModel {
             try {
                 ratioList.add(Integer.parseInt(ratio.trim()));
             } catch (NumberFormatException e) {
-                ratioList.add(6); // Default to 6 if parsing fails
+                ratioList.add(6); 
             }
         }
         return ratioList;

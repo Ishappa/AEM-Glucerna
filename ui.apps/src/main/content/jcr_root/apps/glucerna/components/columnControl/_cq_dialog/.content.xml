@@ -77,11 +77,6 @@
                                         value="6:6"/>
                                 </items>
                             </parsysRatio>
-                            <id
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                fieldLabel="Id"
-                                name="./twoparsysId"/>
                         </items>
                         <granite:data
                             jcr:primaryType="nt:unstructured"
@@ -121,11 +116,6 @@
                                         value="6:3:3"/>
                                 </items>
                             </parsysRatio>
-                            <id
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                fieldLabel="Id"
-                                name="./threeparsysId"/>
                         </items>
                         <granite:data
                             jcr:primaryType="nt:unstructured"
@@ -165,11 +155,6 @@
                                         value="4:4:2:2"/>
                                 </items>
                             </parsysRatio>
-                            <id
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                fieldLabel="Id"
-                                name="./fourparsysId"/>
                         </items>
                         <granite:data
                             jcr:primaryType="nt:unstructured"
@@ -199,16 +184,40 @@
                                         value="8:4:4:4:4"/>
                                 </items>
                             </parsysRatio>
-                            <id
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                fieldLabel="Id"
-                                name="./fiveparsysId"/>
                         </items>
                         <granite:data
                             jcr:primaryType="nt:unstructured"
                             showhidetargetvalue="fiveparsys"/>
                     </fiveparsys>
+                    <variations
+                        granite:class="cq-dialog-dropdown-showhide"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Select Variation"
+                        name="./variation">
+                        <items jcr:primaryType="nt:unstructured">
+                            <variation_one
+                                jcr:primaryType="nt:unstructured"
+                                name="./variationone"
+                                text="Variation One"
+                                value="variationone"/>
+                            <variation_two
+                                jcr:primaryType="nt:unstructured"
+                                name="./vatiationtwo"
+                                text="Variation Two"
+                                value="variationtwo"/>
+                            <variation_three
+                                jcr:primaryType="nt:unstructured"
+                                name="./vatiationthree"
+                                text="Variation Three"
+                                value="variationthree"/>
+                        </items>
+                    </variations>
+                    <id
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Id"
+                        name="./id"/>
                 </items>
             </column>
         </items>

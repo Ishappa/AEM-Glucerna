@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById("myModal");
-    const closeicon = document.getElementsByClassName("modal-content-close")[0];
+    const closeicon = document.getElementsByClassName("modal-popup-content-close")[0];
     let popupClose = localStorage.getItem('popupclose') === 'true';
     let alreadyMem = localStorage.getItem('alreadymem') === 'true';
 

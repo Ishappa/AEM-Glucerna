@@ -1,22 +1,22 @@
 <sly data-sly-use.cookie="com.adobe.aem.guides.glucerna.core.models.CookiePopUp"
      data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
-<div id="myModal" class="modal">
+<div id="myModal" class="modal-popup">
    <!-- Modal content -->
-   <div class="modal-content">
-      <div  class="modal-content-image" style="background-image: url('${properties.backgroundImage @context='unsafe'}');">
-         <div class="modal-content-close">
-            <span class="modal-content-close-icon" id="btn-design">&times;</span>
+   <div class="modal-popup-content">
+      <div  class="modal-popup-content-image" style="background-image: url('${properties.backgroundImage @context='unsafe'}');">
+         <div class="modal-popup-content-close">
+            <span class="modal-popup-content-close-icon" id="btn-design">&times;</span>
          </div>
-         <div class="modal-content-image-text">
+         <div class="modal-popup-content-image-text">
             <h2 >${cookie.title @context='html'}</h2>
             <h2 >${cookie.description @context='html'}</h2>
-            <div class="modal-content-image-button-gap">
-               <a href="${cookie.buttonOneLink}.html"><button class="modal-content-image-button-gap-column">${cookie.buttonOne}</button></a>
-               <a href="${cookie.buttonTwoLink}.html"><button class="modal-content-image-button-gap-column">${cookie.buttonTwo}</button></a>
+            <div class="modal-popup-content-image-button-gap">
+               <a href="${cookie.buttonOneLink}.html"><button class="modal-popup-content-image-button-gap-column">${cookie.buttonOne}</button></a>
+               <a href="${cookie.buttonTwoLink}.html"><button class="modal-popup-content-image-button-gap-column">${cookie.buttonTwo}</button></a>
             </div>
-            <div class="modal-content-image-thanks">
-                <div class="modal-content-image-thanks-pop" style="display: flex; justify-content: space-between;">
-                  <a id="thanks" class="modal-content-image-thanks-pop-link" href="#">${cookie.thanks @context='html'}</a>
+            <div class="modal-popup-content-image-thanks">
+                <div class="modal-popup-content-image-thanks-pop" style="display: flex; justify-content: space-between;">
+                  <a id="thanks" class="modal-popup-content-image-thanks-pop-link" href="#">${cookie.thanks @context='html'}</a>
                 </div>
                		<div>${cookie.finalDescription @context='html'}</div>
             </div>

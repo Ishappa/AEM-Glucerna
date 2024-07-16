@@ -21,11 +21,17 @@ public class IconFields {
     //     return openInNewTab;
     // }
 
+    @ValueMapValue
+    private String alt;
+
     public String getFile() {
         return file;
     }
     public String getLink() {
         return link;
+    }
+    public String getAlt() {
+        return alt;
     }
 
 }

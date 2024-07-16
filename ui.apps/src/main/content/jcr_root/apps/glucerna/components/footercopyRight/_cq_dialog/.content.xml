@@ -24,6 +24,11 @@
                                 name="./file"
                                 required="{Boolean}true"
                                 rootPath="/content/dam"/>
+                            <alt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Alt Text "
+                                name="./alt"/>
                             <link
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
@@ -59,6 +64,11 @@
                                             name="./file"
                                             required="{Boolean}true"
                                             rootPath="/content/dam"/>
+                                        <alt
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Alt Text "
+                                            name="./alt"/>
                                         <link
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"

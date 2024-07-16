@@ -9,7 +9,7 @@
         <a
           href="${footer.link}"
           target="${footerItems.openInNewTab ? '_blank' : '_self'}"
-          ><img class="logo_img" src="${footer.file}"
+          ><img class="logo_img" src="${footer.file}" alt="${properties.alt}"
         /></a>
       </div>
 
@@ -22,8 +22,9 @@
               href="${footerItems.link}"
               target="${footerItems.openInNewTab ? '_blank' : '_self'}"
             >
-              <img class="footer_icons" src="${footerItems.file}"
-            /></a>
+              <img class="footer_icons" src="${footerItems.file}" alt="${properties.alt}"/>
+              
+              </a>
           </sly>
         </div>
       </div>

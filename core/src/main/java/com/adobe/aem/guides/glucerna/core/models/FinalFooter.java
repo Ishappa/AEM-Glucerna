@@ -24,6 +24,9 @@ public class FinalFooter {
     private String link;
 
     @ValueMapValue
+    private String alt;
+
+    @ValueMapValue
     private String text;
 
     @ValueMapValue
@@ -50,5 +53,8 @@ public class FinalFooter {
     }
     public String getLink() {
         return link;
+    }
+    public String getAlt() {
+        return alt;
     }
 }

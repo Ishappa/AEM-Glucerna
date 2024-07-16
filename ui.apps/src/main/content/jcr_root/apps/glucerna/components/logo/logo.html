@@ -1,10 +1,10 @@
 <sly data-sly-use.logo="com.adobe.aem.guides.glucerna.core.models.LogoModel" data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
   <div class="header-logo">
     <a href="${logo.logoUrl}.html">
-      <img class="header-logo-imagelogo" src="${logo.logoImage}" />
+      <img class="header-logo-imagelogo" src="${logo.logoImage}" alt="${properties.logoalt}"/>
     </a>
     <a href="${logo.abbottLogoUrl}" target="${logo.newTab ? '_blank' : '_self'}">
-      <img class="header-logo-abbott" src="${logo.abbottLogo}" />
+      <img class="header-logo-abbott" src="${logo.abbottLogo}" alt="${properties.abbotalt}"/>
     </a>
   </div>
 </sly>

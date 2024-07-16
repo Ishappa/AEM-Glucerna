@@ -5,7 +5,6 @@
     float: none !important;
 }
 .container-v2 {
-    background-color:#ececeb;
     max-width: 1200px;
     margin: auto;
     float: none !important;
@@ -80,10 +79,6 @@
         padding: 0 15px;
         margin-bottom: 30px;
     }
-
-    .container-v1, .container-v2 {
-        max-width: 720px !important;
-    }
 }
 
 @media (max-width: 767px) {
@@ -95,8 +90,8 @@
     }
 
     [data-variation="variationtwo"] > .container_items > div:not(:first-child) {
-        flex: 0 0 95%;
-        max-width: 95%;
+        flex: 0 0 96%;
+        max-width: 96%;
         padding: 0px !important;
         margin-bottom: 15px !important;
     }
@@ -113,18 +108,5 @@
         max-width: 96%;
         margin-bottom: 15px;
         padding: 0 15px;
-    }
-}
-
-@media(min-width:1200px){
-    .container_items{
-        margin-left:24px;
-        margin-right:24px;
-    }
-}
-
-@media(max-width:1199px){
-    .container-v1, .container-v2 {
-        max-width: 960px;
     }
 }

@@ -1,0 +1,19 @@
+<sly data-sly-use.bannerdescript="com.adobe.aem.guides.glucerna.core.models.BannerDescription"
+	data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<div class="bannerdescription_container">	
+    <div class="descrption_detail">
+    	<div class="image_description">
+            <sly data-sly-test="${bannerdescript.logo}"><img class="banner_logo" src="${bannerdescript.logo}"></sly>
+            <div class="title_detials"><h1>${bannerdescript.titledetails @context='html'}</h1></div>
+        </div>
+        <div class="imageunder_description">
+            <div class="banner_discription">${bannerdescript.description @context='html'}</div>
+            <div class="banner_discountdescription">${bannerdescript.discountdescription @context='html'}</div>
+            <a class="button_banner"  href="${bannerdescript.buttonlink}" target="${bannerdescript.targetcheckbox}">${bannerdescript.buttontext}</a>
+        </div>
+    </div>
+    <div class="banner_image">
+    	<img id="bannerbackground_image" src="${bannerdescript.backgroundimage}">
+    </div>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !text}"></sly>

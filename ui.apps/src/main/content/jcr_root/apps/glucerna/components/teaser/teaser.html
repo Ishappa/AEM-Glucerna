@@ -1,0 +1,13 @@
+<div class="treaserv1">
+    <sly data-sly-include="/libs/core/wcm/components/teaser/v2/teaser/teaser.html"></sly>
+    <sly data-sly-test="${properties.mobileasset}">
+        <div class="mobile_details">
+            <img src="${properties.mobileasset}" >
+        </div>
+    </sly>
+    <sly>
+        <div class="logoreference">
+            <img src="${properties.logoimage}">
+        </div>
+    </sly>
+</div>

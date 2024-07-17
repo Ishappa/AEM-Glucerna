@@ -1,0 +1,11 @@
+<sly data-sly-use.bannerimagetext="com.adobe.aem.guides.glucerna.core.models.BannerImage" 
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<div class="container_image_desktop">
+    <img class="image" src="${bannerimagetext.desktopRefernce}">
+    <div class="image_title" >${bannerimagetext.desktoptitle @ context='html'} </div>
+</div>
+<div class="container_image_mobile">
+    <img class="image" src="${bannerimagetext.mobileReference}">
+    <div class="image_title" >${bannerimagetext.mobiletitle @ context='html'} </div>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !text}"></sly>

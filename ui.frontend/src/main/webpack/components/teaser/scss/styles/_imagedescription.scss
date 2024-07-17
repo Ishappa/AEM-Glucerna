@@ -1,0 +1,228 @@
+.imagedescription {
+    .treaserv1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 28px;
+
+        .cmp-teaser {
+            position: relative;
+            height: 427px;
+
+            .cmp-teaser__content {
+                position: relative;
+                z-index: 2;
+                padding-left: 6%;
+                color: rgb(0, 45, 114);
+                width: 50%;
+
+                .cmp-teaser__title {
+                    font-size: 46px;
+                    line-height: 45px;
+                    font-weight: 700;
+                    margin: 0px;
+                    font-family: "brandon_textblack", sans-serif;
+                }
+
+                .cmp-teaser__description {
+                    font-weight: 400;
+                    line-height: 24px;
+                    font-size: 18px;
+                    font-family: "brandon_textregular", sans-serif;
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        padding-left: 10px;
+                    }
+                }
+
+                .cmp-teaser__action-link {
+                    text-decoration: none;
+                    letter-spacing: 3px;
+                    color: #002d72;
+                    font-weight: 700;
+                    background-color: #FFD100;
+                    padding: 12px 32px;
+                    font-size: 20px;
+                    line-height: 18px;
+                    font-family: "brandon_textbold", sans-serif;
+                }
+            }
+
+            .cmp-teaser__image {
+                position: absolute;
+                z-index: 1;
+                top: -92px;
+                width: 100%;
+
+                .cmp-image__image {
+                    width: 100%;
+                    height: 484px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .mobile_details {
+            display: none;
+        }
+
+        .logoreference {
+            z-index: 2;
+            padding-left: 6%;
+        }
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1199.98px) {
+    .imagedescription {
+        .treaserv1 {
+            .cmp-teaser {
+                .cmp-teaser__content {
+                    width: 70%;
+                    .cmp-teaser__title {
+                        font-size: 32px;
+                        line-height: 38px;
+                    }
+                    .cmp-teaser__description{
+                        width:84%;
+                        line-height: 21px;
+                    }
+                }
+                .cmp-teaser__image {
+                   .cmp-image__image {
+                       width: 100%;
+                       height: 498px;
+                       object-fit: cover;
+                   }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 771px){
+   .imagedescription {
+           .treaserv1 {
+               .cmp-teaser {
+                    .cmp-teaser__content {
+                        padding-left: 4%;
+                        width: -webkit-fill-available;
+                        .cmp-teaser__title{
+                            width: 62%;
+                            font-size: 18px;
+                            line-height: 24px;
+                            margin: 12px 0px -19px -2%;
+                        }
+                        .cmp-teaser__description{
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            margin-top: 40px;
+                            margin-left: -5%;
+                            background: #002D72;
+                            color: white;
+                            width: auto;
+                            ul{
+                                margin-top: -12px;
+                                padding-top: 10px;
+                            }
+                        }
+                        .cmp-teaser__action-container{
+                            background: #002d72;
+                            margin-left: -8%;
+                            margin-top: -19px;
+                            padding: 2pc;
+                            padding-right: 0pc;
+                            padding-left: inherit;
+                            .cmp-teaser__action-link{
+                                color: #002d72;
+                                font-family: brandon_textbold, sans-serif;
+                                font-size: 20px;
+                                font-weight: 700;
+                                letter-spacing: 3px;
+                                line-height: 18px;
+                                padding: 9pt 2pc;
+                                text-decoration: none;
+                                margin-left: 34px;
+                            }
+                        }
+                    }
+                     .cmp-teaser__image {
+                       .cmp-image__image {
+                           width: 100%;
+                           height: 190px;
+                           object-fit: cover;
+                       }
+                    }
+               }
+               .logoreference{
+                    padding-left: 2%;
+                    z-index: 2;
+                    width: 80%;
+               }
+           }
+   }
+}
+
+
+@media only screen and (min-width: 749px) and (max-width: 767px) {
+    .imagedescription {
+        .treaserv1 {
+            .cmp-teaser {
+                height: 349px;
+            }
+        }
+   }
+}
+
+@media only screen and (min-width: 611px) and (max-width: 749px) {
+    .imagedescription {
+        .treaserv1 {
+            .cmp-teaser {
+                height: 375px;
+            }
+        }
+   }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 611px) {
+    .imagedescription {
+        .treaserv1 {
+            .cmp-teaser {
+                height: 398px;
+            }
+        }
+   }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 500px) {
+    .imagedescription {
+        .treaserv1 {
+            .cmp-teaser {
+                height: 422px;
+            }
+        }
+   }
+}
+
+@media only screen and (min-width: 402px) and (max-width: 470px) {
+    .imagedescription {
+        .treaserv1 {
+            .cmp-teaser {
+                height: 448px;
+            }
+        }
+   }
+}
+
+@media only screen and (max-width: 402px) {
+    .imagedescription {
+        .treaserv1 {
+            .cmp-teaser {
+                height: 495px;
+            }
+        }
+   }
+}

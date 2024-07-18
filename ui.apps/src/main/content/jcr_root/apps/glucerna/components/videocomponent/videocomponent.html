@@ -1,18 +1,15 @@
 <sly data-sly-use.compo="com.adobe.aem.guides.glucerna.core.models.VideoComp"
      data-sly-use.template="core/wcm/components/commons/v1/templates.html"
      data-sly-test.empty="${compo.damVideoPath || compo.youtubeUrl}">
-    <div data-sly-test="${compo.path == 'dam'}">
+    <sly data-sly-test="${compo.path == 'dam'}">
         <div class="video-container video_dam">
-            <video id="myVideo"
-                   poster="${compo.videoPoster}"
-                   style="cursor: pointer;"
-                   > 
+            <video id="myVideo" poster="${compo.videoPoster}" loop="${compo.loop}" muted="${compo.mute}" autoplay="${compo.autoplay}"> 
                 <source src="${compo.damVideoPath}" type="video/mp4" />
             </video>
             <div class="play-button" id="playButton"></div>
         </div>
-    </div>
-    <div data-sly-test="${compo.path == 'youtube'}">
+    </sly>
+    <sly data-sly-test="${compo.path == 'youtube'}">
         <div class="video-container vid_youtube">
             <iframe style="width:100%;height:100%;"
                     src="${compo.youtubeUrl}"
@@ -21,8 +18,9 @@
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
         </div>
-    </div>
+    </sly>
     <div data-sly-test="${compo.path == 'brightcove'}">
         BrightCove Player: <a href="https://www.brightcove.com/en/">BrightCove</a>
     </div>
 </sly>
+<sly data-sly-call = "${template.placeholder @ isEmpty=!empty}"></sly>

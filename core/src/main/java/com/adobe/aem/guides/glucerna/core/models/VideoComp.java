@@ -15,6 +15,7 @@ public class VideoComp {
     @ValueMapValue private String autoplay;
     @ValueMapValue private String rel;
     @ValueMapValue private String mute;
+    @ValueMapValue private String loop;
     @ValueMapValue private String youtubeUrl;
 
     public String getPath() {
@@ -35,6 +36,24 @@ public class VideoComp {
 
     public String getYoutubeUrl() {
         return youtubeUrl;
+    }
+
+    public String getLoop() {
+        return loop;
+    }
+
+    public String getAutoplay() {
+        if(autoplay.equals("1")){
+           return "autoplay";
+        }
+        return "";
+    }
+
+    public String getMute() {
+        if(mute.equals("1")){
+            return "muted";
+        }
+        return "";
     }
 
     @PostConstruct

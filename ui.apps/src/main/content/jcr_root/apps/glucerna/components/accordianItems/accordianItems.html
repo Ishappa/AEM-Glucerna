@@ -1,0 +1,24 @@
+<sly
+  data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+  data-sly-test.empty="${properties.prodTitle}"
+>
+</sly>
+
+<div class="main_container_items">
+  <div class="text_Container">
+    <div class="text_items">
+      <h3>
+        <a href="${properties.link}" target="${properties.openInNewTab ? '_blank' : '_self'}">
+          <span class="upper_case"> ${properties.prodTitle}</span>
+        </a>
+      </h3>
+      <p>
+        <a href="${properties.link}" target="${properties.openInNewTab ? '_blank' : '_self'}">
+          <span> ${properties.prodDescription @context='html'}</span>
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<sly data-sly-call="${template.placeholder @ isEmpty=!empty}"></sly>

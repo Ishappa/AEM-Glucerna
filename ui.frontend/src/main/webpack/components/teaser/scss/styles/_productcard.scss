@@ -43,12 +43,14 @@
 //             max-height: 418px;
             overflow: hidden !important;
             img{
-                width: 100%;
+                width: 103%;
+                height: 374px;
+                display: block;
                 object-fit: cover;
             }
         }
     }
-        .star-container {
+        .rating-container {
              display: flex;
              align-items: center;
              position: absolute;
@@ -101,10 +103,46 @@
                 }
             }
         }
-        .star-container {
+        .rating-container {
             bottom: 1pc;
             .star{
                     font-size: 27px;
+            }
+
+        }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .productcard {
+    .treaserv1{
+        .cmp-teaser {
+            height: fit-content;
+            .cmp-teaser__content{
+                .cmp-teaser__description{
+                    padding: 0;
+                    width: 44%;
+                }
+            }
+            .cmp-teaser__image{
+                height: 100%;
+                img{
+                    display: block;
+                    height: 350px;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    width: 100%;
+                    min-width: 290px;
+                    object-position: center center;
+                }
+            }
+        }
+        .rating-container {
+            bottom: 1pc;
+            .star{
+                    font-size: 25px;
             }
 
         }

@@ -13,7 +13,7 @@
         </div>
         <div class="navbar-position">
             <ul class="navbar-ul " data-sly-list.nav="${navigation.items}">
-                <li class="navbar-ul-list" data-sly-test="${nav.children.size==0}">
+                <li class="navbar-ul-list" data-sly-test="${navList.count <=6}">
                     <a class="navbar-ul-title" href="${nav.page.path}.html">${nav.page.title}</a>
                 </li>
             </ul>

@@ -4,9 +4,9 @@ $teaser-img-height: $teaser-height;
 .cmp-teaser--card {
   .cmp-teaser {
     position: relative;
-    height: $teaser-height;
     max-height: $teaser-height;
     overflow: hidden;
+    height: 349px;
     /* background-color: #ededed; */
     margin-bottom: 14px;
     margin-top: 14px;

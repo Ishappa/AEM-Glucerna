@@ -1,13 +1,38 @@
-<div class="treaserv1">
-    <sly data-sly-include="/libs/core/wcm/components/teaser/v2/teaser/teaser.html"></sly>
+<div class="treaserv1 card_image">
     <sly data-sly-test="${properties.mobileasset}">
         <div class="mobile_details">
-            <img src="${properties.mobileasset}" >
+            <img src="${properties.mobileasset}">
         </div>
     </sly>
+    <sly data-sly-include="/libs/core/wcm/components/teaser/v2/teaser/teaser.html"></sly>
     <sly>
-        <div class="logoreference">
+        <div data-sly-test="${properties.logoimage}"class="logoreference">
             <img src="${properties.logoimage}">
         </div>
     </sly>
+    <div data-sly-test="${properties.rating}" id="star-rating" class="rating-container">
+
+        <div class="star">
+            <span class="full-star">★</span>
+            ★
+        </div>
+        <div class="star">
+            <span class="full-star">★</span>
+            ★
+        </div>
+        <div class="star">
+            <span class="full-star">★</span>
+            ★
+        </div>
+        <div class="star">
+            <span class="full-star">★</span>
+            ★
+        </div>
+        <div class="star">
+            <span class="full-star">★</span>
+            ★
+        </div>
+        <span class="rating-number" id="rating-number">${properties.rating}</span>
+    </div>
 </div>
+

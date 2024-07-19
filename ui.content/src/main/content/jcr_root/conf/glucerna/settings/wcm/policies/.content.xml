@@ -5,6 +5,20 @@
     <rep:policy/>
     <glucerna jcr:primaryType="nt:unstructured">
         <components jcr:primaryType="nt:unstructured">
+            <breadcrumb jcr:primaryType="nt:unstructured">
+                <policy_1720689685672
+                        jcr:lastModified="{Date}2024-07-11T14:52:09.724+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Testing"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        disableShadowing="false"
+                        hideCurrent="false"
+                        showHidden="false"
+                        startLevel="2">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1720689685672>
+            </breadcrumb>
             <form jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
                     <form-container
@@ -339,6 +353,33 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_2367338770624300
+                        jcr:lastModified="{Date}2024-07-19T09:44:27.598+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Variations"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                                cq:styleGroupLabel="Container Styles"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="container-v1"
+                                        cq:styleId="1721362408165"
+                                        cq:styleLabel="White Background"
+                                        jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                        cq:styleClasses="container-v2"
+                                        cq:styleId="1721362410981"
+                                        cq:styleLabel="No White Background"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_2367338770624300>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650

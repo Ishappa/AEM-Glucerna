@@ -18,10 +18,23 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="glucerna/components/container"
                 layout="responsiveGrid">
-                <title
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="glucerna/components/title"
-                    editable="{Boolean}true"/>
+                <container_1023676234
+                        cq:styleIds="[1721362408165]"
+                        jcr:created="{Date}2024-07-19T09:42:15.280+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2024-07-19T09:42:15.280+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="glucerna/components/container">
+                    <breadcrumb
+                            jcr:created="{Date}2024-07-19T09:58:30.098+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2024-07-19T09:58:30.098+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="glucerna/components/breadcrumb"
+                            startLevel="4"/>
+                </container_1023676234>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="glucerna/components/container"

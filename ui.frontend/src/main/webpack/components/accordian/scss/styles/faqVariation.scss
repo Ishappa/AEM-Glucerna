@@ -74,7 +74,7 @@
 
 
   .cmp-accordion__panel {
-    max-height: 0;
+    // max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.5s ease;
   }

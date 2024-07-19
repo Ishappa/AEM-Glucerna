@@ -360,6 +360,7 @@
                         jcr:title="Variations"
                         sling:resourceType="wcm/core/components/policy/policy"
                         layoutDisabled="false">
+
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
                         <item0
@@ -378,6 +379,17 @@
                                         jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
+                        <item1
+                                cq:styleGroupLabel="Styles"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="padding-left-right"
+                                        cq:styleId="1721368440316"
+                                        cq:styleLabel="padding"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
                     </cq:styleGroups>
                 </policy_2367338770624300>
             </container>

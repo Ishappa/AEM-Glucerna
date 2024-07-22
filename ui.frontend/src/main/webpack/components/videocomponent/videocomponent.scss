@@ -1,13 +1,10 @@
-  .videocomponent{
-       height:100%;
-    }
     video{
       cursor: pointer;
     }
     .video_dam {
          position: relative;
          width:100%;
-         height:100%;
+         height:22.5rem;
        }
         .video_dam video {
             width: 100%;
@@ -18,7 +15,7 @@
 
         .vid_youtube{
              width:100%;
-             height:100%;
+             height:22.5rem;
         }
 
         .play-button {
@@ -28,36 +25,27 @@
             width: 100%;
             height: 100%;
             cursor: pointer;
-      /*    background: rgba(0, 0, 0, 0) no-repeat center center;
-            background-size: 64px 64px;   */
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
+         @media screen and (max-width: 1199px){
+        	.video_dam{
+               max-height:19rem;
+            }
+            .vid_youtube{
+             height:19rem;
+            }
+        }
 
-         @media screen and (max-width: 1441px){
-        	.video_dam video{
-               max-height:440px;
-            }
-        }
-         @media screen and (max-width: 1201px){
-        	.video_dam video{
-               max-height:349.79px;
-            }
-        }
-        @media screen and (max-width: 1024px){
-        	.video_dam video{
-               max-height:313.13px;
-            }
-        }
         @media screen and (max-width: 993px){
-        	.vid_youtube{
-              height:334.35px;
+        	.video_dam,.vid_youtube{
+              height:20rem;
             }
         }
         @media screen and (max-width: 769px){
-        	.video_dam video{
+        	.video_dam{
                max-height:343.34px;
             }
             .vid_youtube{
@@ -65,7 +53,7 @@
             }
         }
         @media screen and (max-width: 426px){
-        	.video_dam video{
+        	.video_dam{
                max-height:191.26px;
             }
             .vid_youtube{
@@ -74,7 +62,7 @@
 
         }
         @media screen and (max-width: 376px){
-        	.video_dam video{
+        	.video_dam {
                max-height:166.76px;
             }
             .vid_youtube{
@@ -82,10 +70,10 @@
             }
         }
         @media screen and (max-width: 321px){
-        	.video_dam video{
-               max-height:139.95px;
+        	.video_dam {
+               max-height:150.95px;
             }
             .vid_youtube{
-              height:139.95px;
+              height:150.95px;
             }
         }

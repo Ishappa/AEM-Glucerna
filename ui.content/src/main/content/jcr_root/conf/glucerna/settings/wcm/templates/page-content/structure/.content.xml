@@ -19,7 +19,7 @@
                 sling:resourceType="glucerna/components/container"
                 layout="responsiveGrid">
                 <container_1023676234
-                        cq:styleIds="[1721362408165,1721368611505]"
+                        cq:styleIds="[1721362408165,1721368440316]"
                         jcr:created="{Date}2024-07-19T09:42:15.280+05:30"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2024-07-19T09:42:15.280+05:30"

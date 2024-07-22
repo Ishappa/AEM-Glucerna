@@ -12,9 +12,13 @@ $teaser-img-height: $teaser-height;
     .cmp-teaser__image {
       position: absolute;
       width: 100%;
+      height:100%;
+      .cmp-image{
+        height:100%;
+      }
       .cmp-image__image {
         width: 100%;
-        height: $teaser-img-height;
+        height: 100%;
       }
     }
 
@@ -24,7 +28,7 @@ $teaser-img-height: $teaser-height;
       left: 30px;
       bottom: 0px;
       top: auto;
-      height: min-content;
+      height: max-content;
 
       .cmp-teaser__pretitle {
         display: none;
@@ -39,8 +43,6 @@ $teaser-img-height: $teaser-height;
       color: rgb(0, 45, 114);
       font-size: 46px;
       font-weight: 700;
-      line-height: 47px;
-      width: min-content;
 
       &h1 {
         margin: 0px;
@@ -91,5 +93,17 @@ $teaser-img-height: $teaser-height;
         width: 100%;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cmp-teaser--card {
+      .cmp-teaser {
+        height:19rem;
+        .cmp-teaser__description {
+          font-size: 32px;
+          line-height: 38px;
+        }
+      }
   }
 }

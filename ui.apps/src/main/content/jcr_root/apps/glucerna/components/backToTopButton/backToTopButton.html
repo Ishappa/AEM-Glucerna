@@ -1,0 +1,15 @@
+
+<sly
+  data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+  data-sly-test.empty="${properties.btntxt}"
+>
+</sly>
+
+<div id="btn-main">
+<a id="btn-link" href="#">
+<span id="btn-content">${properties.btntxt}</span>
+</a>
+</div>
+
+<sly data-sly-call="${template.placeholder @ isEmpty=!empty}"></sly>
+

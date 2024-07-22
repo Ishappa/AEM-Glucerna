@@ -31,7 +31,6 @@
     display:flex;
     flex: 0 0 66.66%;
     max-width: 66.66%;
-    // max-height: 27.5rem; /* new */
 }
 
 .col-md-6 {
@@ -82,10 +81,14 @@
     }
 
     [data-variation="variationtwo"] > .container_items > div:not(:first-child) {
-        flex: 0 0 45%;
-        max-width: 45%;
+        flex: 0 0 46.5%;
+        max-width: 46.5%;
        /* padding: 0 15px;
         margin-bottom: 30px; */
+    }
+
+    .container_items{
+        column-gap:3%;
     }
 
     .container-v1, .container-v2 {

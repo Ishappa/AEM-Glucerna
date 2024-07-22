@@ -1,13 +1,13 @@
 <div class="treaserv1 card_image">
     <sly data-sly-test="${properties.mobileasset}">
         <div class="mobile_details">
-            <img src="${properties.mobileasset}">
+            <img src="${properties.mobileasset}" alt="${properties.alternatetext}">  
         </div>
     </sly>
     <sly data-sly-include="/libs/core/wcm/components/teaser/v2/teaser/teaser.html"></sly>
     <sly>
         <div data-sly-test="${properties.logoimage}"class="logoreference">
-            <img src="${properties.logoimage}">
+            <img src="${properties.logoimage}" alt="${properties.Logoalternatetext}">
         </div>
     </sly>
     <div data-sly-test="${properties.rating}" id="star-rating" class="rating-container">

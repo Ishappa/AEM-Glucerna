@@ -1,27 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
+  initializeAccordion();
+
+  const observer = new MutationObserver((mutationsList) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === "childList") {
+        initializeAccordion(); // here i am reinitializing the accordion
+      }
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+});
+
+
+function initializeAccordion() {
   const accordionButtons = document.querySelectorAll(".cmp-accordion__button");
   const toggleButton = document.getElementById("toggleAccordion");
 
-  if (accordionButtons.length > 0) {
-    accordionButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        const panel = this.closest(".cmp-accordion__item").querySelector(
-          ".cmp-accordion__panel"
-        );
-        const isExpanded = this.getAttribute("aria-expanded") === "true";
+  accordionButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const panel = this.closest(".cmp-accordion__item").querySelector(
+        ".cmp-accordion__panel"
+      );
+      const isExpanded = this.getAttribute("aria-expanded") === "true";
 
-        this.setAttribute("aria-expanded", !isExpanded);
+      this.setAttribute("aria-expanded", !isExpanded);
 
-        if (isExpanded) {
-          panel.classList.remove("cmp-accordion__panel--expanded");
-          panel.style.maxHeight = "0";
-        } else {
-          panel.classList.add("cmp-accordion__panel--expanded");
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
+      if (isExpanded) {
+        panel.classList.remove("cmp-accordion__panel--expanded");
+        panel.style.maxHeight = "0";
+      } else {
+        panel.classList.add("cmp-accordion__panel--expanded");
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
     });
-  }
+  });
 
   if (toggleButton) {
     toggleButton.addEventListener("click", function () {
@@ -49,4 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
       this.textContent = isExpanded ? "Expand All" : "Collapse All";
     });
   }
-});
+}

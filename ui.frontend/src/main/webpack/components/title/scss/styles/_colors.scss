@@ -1,0 +1,35 @@
+ .cmp-title {}
+.cmp-title__text {}
+.cmp-title__link {}
+
+/* Blue */
+.cmp-title--blue {
+    .cmp-title__text {
+        font-size: 36.0px;
+        color: rgb(0,45,114);
+        @media screen and (min-width:1199px){
+           margin-left:3%;
+        }
+        @media screen and (max-width:1199px){
+           margin-left:1%;
+        }
+        @media screen and (max-width:993px){
+           margin-left:1.5%;
+        }
+    }
+}
+
+//Path to Progress Page
+.cmp-title--path {
+    .cmp-title__text {
+        font-size: 46px;
+        line-height: 45px;
+        margin-top:0px;
+        margin-bottom: 1.25rem;
+        color:#002d72;
+        @media screen and (max-width:991px){
+                font-size: 30px;
+                line-height: 38px;
+        }
+    }
+}

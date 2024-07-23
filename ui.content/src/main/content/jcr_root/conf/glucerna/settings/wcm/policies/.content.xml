@@ -88,6 +88,19 @@
                                 jcr:primaryType="nt:unstructured"
                                 features="-"/>
                     </plugins>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                                cq:styleGroupLabel="Styles"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="width-auto"
+                                        cq:styleId="1721714629332"
+                                        cq:styleLabel="Width Auto"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
                 </policy_651483963895698>
             </image>
             <text jcr:primaryType="nt:unstructured">
@@ -234,6 +247,24 @@
                         linkDisabled="false"
                         type="h2">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                                cq:styleGroupLabel="Color"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="cmp-title--blue"
+                                        cq:styleId="1721653009380"
+                                        cq:styleLabel="Blue"
+                                        jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                        cq:styleClasses="cmp-title--path"
+                                        cq:styleId="1721710715968"
+                                        cq:styleLabel="Path To Progress"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
                 </policy_641528232375303>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">

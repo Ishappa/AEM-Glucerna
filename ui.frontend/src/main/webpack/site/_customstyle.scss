@@ -266,7 +266,6 @@
 .padding-right-20{
     padding-right:20px;
 }
-
 //Remove padding in mobile view
 @media screen and (max-width: 768px){
 .padding-top-tab-0{
@@ -294,3 +293,9 @@
     margin-right:0;
 }
 }
+.width-auto{
+    .cmp-image__image {
+        width: auto;
+    }
+}
+

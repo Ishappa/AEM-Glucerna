@@ -1,0 +1,94 @@
+.image-left {
+        background: white;
+
+           .cmp-teaser {
+               .cmp-teaser__image {
+                   .cmp-image__image {
+                       width: 50%;
+                       height: 600px;
+                       object-fit: cover;
+                   }
+               }
+
+               .cmp-teaser__content {
+                   color: #002d72;
+                   float: right;
+                   padding: 4% 2%;
+                   width: 44.6%;
+                   margin-bottom: 10px;
+
+                 .cmp-teaser__title {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    margin: 0 0px 16px 0px;
+                }
+
+                .cmp-teaser__pretitle {
+                    font-size: 32px;
+                    line-height:36px;
+                    font-weight: 700;
+                    color: #002d72;
+                    margin-bottom:10px;
+                }
+                .cmp-teaser__action-link {
+                   font-weight: 400;
+                   font-size: 20px;
+                   line-height: 18px;
+                   background: #FFD100;
+                   padding: 13px 31px;
+                   margin-bottom: 32px;
+                   text-decoration: none;
+                   border-radius: 5px;
+                   color:#002d72;
+                }
+                .cmp-teaser__action-link:hover{
+                    cursor:pointer;
+                    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+                }
+                }
+                .cmp-teaser__description {
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 27px;
+
+                            ul {
+                                li {
+                                    padding-bottom: 12px;
+                                }
+                            }
+                        }
+}
+}
+
+
+@media screen and (max-width:775px){
+    .image-left {
+        .cmp-teaser {
+            .cmp-teaser__content {
+                padding: 0%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:735px){
+    .image-left {
+            .cmp-teaser {
+                display: flex;
+                flex-direction: column-reverse;
+                .cmp-teaser__image{
+                     .cmp-image__image {
+                        height: 100%;
+                        width:100%;
+                     }
+                }
+                .cmp-teaser__content {
+                    padding: 2%;
+                    width: fit-content;
+                }
+            }
+    }
+}
+
+

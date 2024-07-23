@@ -38,6 +38,11 @@
                                                     name="./mobileasset"
                                                     rootPath="/content/dam/glucerna"
                                                     validation="html-unique-id-validator"/>
+                                            <alternatetext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Alternatetext"
+                                                    name="./alternatetext"/>
                                             <logo
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
@@ -45,6 +50,11 @@
                                                     fieldLabel="LogoImage"
                                                     name="./logoimage"
                                                     rootPath="/content/dam/glucerna"/>
+                                            <logoalternatetext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="LogoAlternatetext"
+                                                    name="./Logoalternatetext"/>
                                             <rating
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"

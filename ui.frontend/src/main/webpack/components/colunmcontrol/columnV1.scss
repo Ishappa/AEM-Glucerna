@@ -87,7 +87,7 @@
         margin-bottom: 30px; */
     }
 
-    .container_items{
+    [data-variation="variationtwo"] > .container_items{
         column-gap:3%;
     }
 
@@ -102,6 +102,10 @@
         max-width: 100%;
         padding: 0px !important;
         /* margin-bottom: 30px !important; */
+    }
+
+    [data-variation="variationtwo"] > .responsiveGrid > * {
+        padding: 0px !important;
     }
 
     [data-variation="variationtwo"] > .container_items > div:not(:first-child) {
@@ -138,3 +142,4 @@
         max-width: 960px;
     }
 }
+

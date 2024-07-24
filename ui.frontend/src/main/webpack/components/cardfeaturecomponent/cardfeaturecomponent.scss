@@ -28,6 +28,8 @@
         .card_feauture_right > a > img {
             height: 100%;
             width: auto;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
         }
 
         @media screen and (max-width: 768px) {

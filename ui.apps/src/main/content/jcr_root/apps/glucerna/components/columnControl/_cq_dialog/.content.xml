@@ -211,6 +211,11 @@
                                 name="./vatiationthree"
                                 text="Variation Three"
                                 value="variationthree"/>
+                            <variation_four
+                                jcr:primaryType="nt:unstructured"
+                                name="./vatiationfour"
+                                text="Variation Four"
+                                value="variationfour"/>
                         </items>
                     </variations>
                     <id

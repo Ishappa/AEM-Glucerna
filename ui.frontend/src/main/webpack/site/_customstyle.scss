@@ -21,10 +21,10 @@
   }
 }
 
-.teaser-productPage-marginbotm-20{
-          @media only screen and (min-width: 992px) {
-            margin-bottom:20px;
-          }
+.teaser-productPage-marginbotm-20 {
+  @media only screen and (min-width: 992px) {
+    margin-bottom: 20px;
+  }
 }
 
 .font-size-14 {
@@ -269,7 +269,6 @@
   padding-right: 20px;
 }
 
-
 @media screen and (max-width: 768px) {
   .padding-top-tab-0 {
     padding-top: 0;
@@ -299,5 +298,6 @@
 .width-auto {
   .cmp-image__image {
     width: auto;
+    max-width: 100%;
   }
 }

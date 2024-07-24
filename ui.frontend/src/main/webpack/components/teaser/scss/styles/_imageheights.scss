@@ -1,0 +1,27 @@
+.imgeheight-max{
+    @media screen and (min-width:735px){
+        .cmp-teaser {
+            height:555px;
+        }
+    }
+}
+
+
+.imgeheight-min{
+    @media screen and (min-width:735px){
+        .cmp-teaser {
+            height:380px;
+        }
+    }
+}
+
+
+.cmp-teaser-card-break{
+    .cmp-teaser__description{
+       width:min-content;
+       @media screen and (max-width:768px){
+         width:max-content;
+       }
+    }
+ }
+

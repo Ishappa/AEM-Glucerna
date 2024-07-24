@@ -6,8 +6,13 @@
         .card_feauture {
             display: flex;
             box-shadow: 0 2px 4px 0 rgb(0 0 0 / 24%), 0 4px 8px -2px rgba(141, 141, 148, 0.28);
+<<<<<<< HEAD
             height:128px;
             background-color:#ececeb;
+=======
+            background-color: #ececeb;
+            height:128px;
+>>>>>>> 79d1a5a993ca2ada982b1197b1c450dcc078c298
         }
 
        .card_feauture_right {
@@ -28,6 +33,8 @@
         .card_feauture_right > a > img {
             height: 100%;
             width: auto;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
         }
 
         @media screen and (max-width: 768px) {
@@ -62,6 +69,7 @@
             .card_feauture_right > img,
             .card_feauture_right > a > img {
                 width: 100%;
+                object-fit:cover;
             }
         }
 

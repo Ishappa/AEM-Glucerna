@@ -28,7 +28,6 @@ $teaser-img-height: $teaser-height;
       left: 30px;
       bottom: 0px;
       top: auto;
-      height: max-content;
 
       .cmp-teaser__pretitle {
         display: none;
@@ -96,7 +95,7 @@ $teaser-img-height: $teaser-height;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 769px){
   .cmp-teaser--card {
       .cmp-teaser {
         height:19rem;

@@ -64,6 +64,7 @@
             .card_feauture_right > img,
             .card_feauture_right > a > img {
                 width: 100%;
+                object-fit:cover;
             }
         }
 

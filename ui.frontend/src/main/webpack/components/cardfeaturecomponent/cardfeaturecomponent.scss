@@ -9,7 +9,7 @@
         }
 
        .card_feauture_right {
-            height: 128px;
+            height: 100%;
             background-color: #ececeb;
             cursor: pointer;
         }
@@ -19,7 +19,7 @@
             font-weight: 600;
             color: #009cde;
             font-family: sans-serif;
-            padding: 16px;
+            padding: 14px;
         }
 
         .card_feauture_right > img,
@@ -28,32 +28,35 @@
             width: auto;
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 768px) {
             .card_feauture {
                 width: 311px !important;
-                height: 128px !important;
             }
 
             .card_feature_parent {
-                margin: 20px;
+                margin: 10px;
             }
 
             .card_feauture_right {
                 width: 50% !important;
             }
+            .card_feature_left_title {
+                 padding: 14px;
+             }
         }
 
-        @media screen and (min-width: 1020px) and (max-width: 1148px) {
-            .card_feature_left_title {
-                padding: 13px;
-            }
+        @media screen and (max-width: 1199px) {
+              .card_feature_left_title {
+                     font-size: 16px;
+                     padding: 10px;
+              }
         }
 
-        @media screen and (min-width: 800px) and (max-width: 1020px) {
+        @media screen and (min-width: 768px) and (max-width: 993px) {
             .card_feature_left_title {
-                padding: 13px;
+                     font-size: 16px;
+                     padding: 8px;
             }
-
             .card_feauture_right > img,
             .card_feauture_right > a > img {
                 width: 100%;

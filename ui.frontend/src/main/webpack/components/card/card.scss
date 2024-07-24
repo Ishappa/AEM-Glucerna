@@ -71,3 +71,15 @@ section > a{
         min-height: 380px;
     }
 }
+
+.card-signup{
+
+    @media (max-width: 993px) and (min-width:320px) {
+        [data-variation="variationt"] > .container_items > * {
+            max-width:50% !important;
+        }
+    }
+    .card_container {
+        min-height: 0px !important;
+    }
+}

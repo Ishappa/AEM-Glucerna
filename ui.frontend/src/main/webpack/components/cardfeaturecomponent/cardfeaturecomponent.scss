@@ -68,6 +68,26 @@
             }
         }
 
+        @media screen and (max-width:340px){
+                   .card_feature_left_title {
+                        font-size: 15px;
+                        padding: 8px;
+                    }
+                    .card_feature_parent{
+                       margin:0px;
+                    }
+                    .card_feature_left{
+                        flex: 0 0 50%;
+                    }
+                    .card_feauture_right{
+                      flex: 0 0 50%;
+                    }
+                    .card_feauture_right > img,
+                    .card_feauture_right > a > img {
+                        width: 100%;
+                     }
+        }
+
         .modal {
             display: none;
             position: fixed;

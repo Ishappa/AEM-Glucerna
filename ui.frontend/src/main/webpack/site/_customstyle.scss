@@ -8,6 +8,18 @@
   }
 }
 
+
+.padding_top_bottom{
+    padding:40px 39px ! important;
+       @media screen and (max-width: 1200px){
+              padding:40px 15px ! important;
+           }
+       @media screen and (max-width: 769px){
+          padding:40px 15px ! important;
+       }
+}
+
+
 .teaserh2 {
   .cmp-teaser__content h2 {
     @media only screen and (min-width: 768px) and (max-width: 1199px) {

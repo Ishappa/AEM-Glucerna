@@ -2,20 +2,29 @@
         background: white;
 
            .cmp-teaser {
+                display: flex;
+                flex-direction:row-reverse;
+                align-items: center;
                .cmp-teaser__image {
-                   .cmp-image__image {
-                       width: 50%;
-                       height: 600px;
-                       object-fit: cover;
+                    height: 100%;
+                    width: 50%;
+                    .cmp-image{
+                        height: 100%;
+                       .cmp-image__image {
+                           height: 100%;
+                           -o-object-fit: cover;
+                           object-fit: cover;
+                       }
                    }
                }
 
                .cmp-teaser__content {
                    color: #002d72;
-                   float: right;
-                   padding: 4% 2%;
-                   width: 44.6%;
+                   float: left;
                    margin-bottom: 10px;
+                   /* padding: 4% 2%; */
+                   width: 47%;
+                   padding-left: 3%;
 
                  .cmp-teaser__title {
                     font-size: 24px;
@@ -63,10 +72,11 @@
 
 
 @media screen and (max-width:775px){
-    .image-left {
+    .image-left
+     {
         .cmp-teaser {
             .cmp-teaser__content {
-                padding: 0%;
+                padding: 0 1.5% 0 1.5%;
             }
         }
     }
@@ -78,6 +88,7 @@
                 display: flex;
                 flex-direction: column-reverse;
                 .cmp-teaser__image{
+                    width:100%;
                      .cmp-image__image {
                         height: 100%;
                         width:100%;
@@ -85,10 +96,8 @@
                 }
                 .cmp-teaser__content {
                     padding: 2%;
-                    width: fit-content;
+                    width: 100%;
                 }
             }
     }
 }
-
-

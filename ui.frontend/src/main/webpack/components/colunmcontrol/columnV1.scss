@@ -128,6 +128,28 @@
         margin-bottom: 15px;
         padding: 0 15px;
     }
+    .container-v1, .container-v2 {
+                max-width: 100% !important;
+    }
+}
+@media (max-width: 768px) {
+    [data-variation="variationfour"] > .container_items > div:first-child {
+        flex: 0 0 96%;
+        max-width: 96%;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    [data-variation="variationfour"] > .container_items > div:not(:first-child) {
+        flex: 0 0 96%;
+        max-width: 96%;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    .container-v1, .container-v2 {
+            max-width: 100% !important;
+    }
 }
 
 @media(min-width:1200px){

@@ -1,2 +1,11 @@
 .cmp-text {}
 .cmp-text__paragraph {}
+
+
+.text-description-bottom{
+    .cmp-text{
+       text-align: center;
+       color: rgb(0,45,114);
+       font-size: 14.0px;
+    }
+}

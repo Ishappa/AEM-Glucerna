@@ -1,2 +1,12 @@
+/*
 .cmp-separator {}
-.cmp-separator__horizontal-rule {}
+.cmp-separator__horizontal-rule {} */
+ .products-separator{
+    .cmp-separator{
+      .cmp-separator__horizontal-rule{
+         height:8px;
+         background-color:#009cde;
+         border:none;
+      }
+    }
+ }

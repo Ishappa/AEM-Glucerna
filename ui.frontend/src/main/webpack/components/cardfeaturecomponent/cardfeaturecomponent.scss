@@ -6,8 +6,8 @@
         .card_feauture {
             display: flex;
             box-shadow: 0 2px 4px 0 rgb(0 0 0 / 24%), 0 4px 8px -2px rgba(141, 141, 148, 0.28);
-            background-color: #ececeb;
             height:128px;
+            background-color:#ececeb;
         }
 
        .card_feauture_right {
@@ -66,6 +66,26 @@
                 width: 100%;
                 object-fit:cover;
             }
+        }
+
+        @media screen and (max-width:340px){
+                   .card_feature_left_title {
+                        font-size: 15px;
+                        padding: 8px;
+                    }
+                    .card_feature_parent{
+                       margin:0px;
+                    }
+                    .card_feature_left{
+                        flex: 0 0 50%;
+                    }
+                    .card_feauture_right{
+                      flex: 0 0 50%;
+                    }
+                    .card_feauture_right > img,
+                    .card_feauture_right > a > img {
+                        width: 100%;
+                     }
         }
 
         .modal {

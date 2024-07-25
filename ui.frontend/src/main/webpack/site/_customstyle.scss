@@ -313,3 +313,11 @@
     max-width: 100%;
   }
 }
+
+/*
+Image Hide in tablet and mobile view */
+ .image-hide-tablet-mobile{
+  @media screen and (max-width:768px){
+    display:none;
+   }
+ }

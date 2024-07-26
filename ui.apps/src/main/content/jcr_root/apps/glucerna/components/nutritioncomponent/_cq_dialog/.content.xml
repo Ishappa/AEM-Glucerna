@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Nutrition Information"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <nutritioninformation
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Nutrition Information"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <notriotioninfmn
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Nutrition Information Title"
+                                name="./nutritionInformationTitle"/>
+                            <servingsizeinfmn
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Serving Information"
+                                name="./servingSizeInfm"/>
+                            <tableheadingtitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Table Title"
+                                name="./tableTitle"/>
+                            <tableheadingvaluetitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Table Value Title"
+                                name="./tableValueTitle"/>
+                            <multifield
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./fieldNutrition">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <nutrionname
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Nutrion With Serving"
+                                            name="./elementName"/>
+                                        <dailyvalue
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Daily Value (in %)"
+                                            name="./dailyValue"/>
+                                    </items>
+                                </field>
+                            </multifield>
+                        </items>
+                    </nutritioninformation>
+                    <vitaminsandminerals
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Vitamins And Minerals"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <vitaminsandmineralstitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Vitamins And Minerals Title"
+                                name="./vitaminsAndMineralsTitle"/>
+                            <vitaminstitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Vitamins Title"
+                                name="./vitaminsTitle"/>
+                            <multifield1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./fieldVitamin">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <vitaminname
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Vitamin"
+                                            name="./elementName"/>
+                                        <dailyvalue
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Daily Value (in %)"
+                                            name="./dailyValue"/>
+                                    </items>
+                                </field>
+                            </multifield1>
+                            <mineralstitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Minerals Title"
+                                name="./mineralTitle"/>
+                            <multifield2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./fieldMineral">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <mineral
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Mineral"
+                                            name="./elementName"/>
+                                        <dailyvalue
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Daily Value (in %)"
+                                            name="./dailyValue"/>
+                                    </items>
+                                </field>
+                            </multifield2>
+                        </items>
+                    </vitaminsandminerals>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

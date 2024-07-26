@@ -1,0 +1,44 @@
+.nutrition-info {
+  width: 100%;
+}
+
+.title {
+  background-color: #FFD700;
+  color: #002D72;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.serving-size {
+  margin: 10px 0 10px 24px;
+  font-weight: bold;
+  color: #002D72;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #009CDE;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #E6F5FC;
+}
+.tableheading{
+	font-size:18px;
+}

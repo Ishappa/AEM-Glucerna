@@ -1,0 +1,53 @@
+  <div class="nutrition-info" data-sly-use.myObject="com.adobe.aem.guides.glucerna.core.models.NutritionInformation">
+  	<div class="title">${myObject.nutritionInformationTitle}</div>
+    <div class="serving-size">${myObject.servingSizeInfm}</div>
+    <table>
+        <thead>
+            <tr class="tableheading">
+                <th>${myObject.tableTitle}</th>
+                <th>${myObject.tableValueTitle}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-sly-repeat.table1="${myObject.fieldNutrition}">
+                <td>${table1.elementName}</td>
+                <td>${table1.dailyValue}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <div class="title">${myObject.vitaminsAndMineralsTitle}</div>
+    <table>
+        <thead>
+            <tr class="tableheading">
+                <th>${myObject.vitaminsTitle}</th>
+                <th>${myObject.vitaminsTitl}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-sly-repeat.table2="${myObject.fieldVitamin}">
+                <td>${table2.elementName}</td>
+                <td>${table2.dailyValue}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr class="tableheading">
+                <th>${myObject.mineralTitle}</th>
+                <th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-sly-repeat.table3="${myObject.fieldMineral}">
+                <td>${table3.elementName}</td>
+                <td>${table3.dailyValue}</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <hr style="color:#009CDE;height:10px;background-color:#009CDE">
+</div>

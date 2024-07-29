@@ -1,0 +1,16 @@
+
+
+<div class="ingredients" data-sly-use.productIngdnts="com.adobe.aem.guides.glucerna.core.models.ProductIngredients">
+   <div class="ingredient-title">
+       <h3>${productIngdnts.ingTitle}</h3>
+   </div>
+   
+   <div>
+       <div class="ingredient-desc-title">
+           <p>${productIngdnts.descTitle}</p>
+       </div>
+       <div class="ingredient-description">
+          ${productIngdnts.description @context='html'}
+       </div>
+   </div>
+</div>

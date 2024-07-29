@@ -1,44 +1,47 @@
 .nutrition-info {
-  width: 100%;
+    width: 100%;
 }
+    .nutrition-title {
+      background-color: #FFD700;
+      color: #002D72;
+      text-align: center;
+      font-weight: bold;
+      line-height:24px;
+      padding :14px 40px;
+      @media (min-width:778px){
+        padding:14px 20px;
+      }
+      font-size: 1.5em;
+    }
 
-.title {
-  background-color: #FFD700;
-  color: #002D72;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 1.5em;
-}
+    .serving-size {
+      margin: 10px 0 10px 24px;
+      font-weight: bold;
+      color: #002D72;
+    }
 
-.serving-size {
-  margin: 10px 0 10px 24px;
-  font-weight: bold;
-  color: #002D72;
-}
+    .nutrition-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+    .nutrition-thead {
+      background-color: #009CDE;
+      color: white;
+    }
 
-thead {
-  background-color: #009CDE;
-  color: white;
-}
-
-th, td {
+.tableheadingdata, .tablerowdata {
   padding: 12px;
   text-align: left;
 }
 
-tbody tr:nth-child(even) {
+.nutrition-tbody .tabledata:nth-child(even) {
   background-color: #FFFFFF;
 }
 
-tbody tr:nth-child(odd) {
+.nutrition-tbody .tabledata:nth-child(odd) {
   background-color: #E6F5FC;
 }
-.tableheading{
-	font-size:18px;
-}
+    .tableheading{
+        font-size:18px;
+    }

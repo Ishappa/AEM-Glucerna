@@ -1,0 +1,33 @@
+.ingredients{
+    	background: #E6F5FC;
+        color: rgb(0, 45, 114);
+	.ingredient-title{
+    	text-align: center;
+        color: #002D72;
+        background: #FFD100;
+        font-size: 24px;
+        line-height: 34px;
+        padding: 14px 40px;
+        @media (min-width:768px){
+            padding: 14px 20px;
+        }
+        h3{
+            margin:0px;
+        }
+    }
+    .ingredient-desc-title{
+    	font-size: 18px;
+        color: rgb(0, 45, 114);
+        padding: 16px 16px 0px 16px;
+        font-weight: bold;
+    }
+    .ingredient-description{
+    	font-size: 18px;
+        line-height: 20px;
+        margin: 0;
+        padding: 0px 16px;
+        p{
+            margin:0px;
+        }
+    }
+}

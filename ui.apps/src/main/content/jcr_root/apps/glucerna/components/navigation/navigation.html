@@ -1,4 +1,4 @@
-<sly data-sly-use.navigation="com.adobe.cq.wcm.core.components.models.Navigation" />
+<sly data-sly-use.navigation="com.adobe.cq.wcm.core.components.models.Navigation" data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
 
 <div>
     <nav class="navbar ">
@@ -20,3 +20,4 @@
         </div>
     </nav>
 </div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = true}"></sly>

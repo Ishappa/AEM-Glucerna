@@ -1,15 +1,15 @@
 
 
 <div class="ingredients" data-sly-use.productIngdnts="com.adobe.aem.guides.glucerna.core.models.ProductIngredients">
-   <div class="ingredient-title">
+   <div class="ingredient-title" data-sly-test="${productIngdnts.ingTitle}">
        <h3>${productIngdnts.ingTitle}</h3>
    </div>
    
    <div>
-       <div class="ingredient-desc-title">
+       <div class="ingredient-desc-title" data-sly-test="${productIngdnts.descTitle}">
            <p>${productIngdnts.descTitle}</p>
        </div>
-       <div class="ingredient-description">
+       <div class="ingredient-description" data-sly-test="${productIngdnts.description}">
           ${productIngdnts.description @context='html'}
        </div>
    </div>

@@ -8,27 +8,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
   }
-
-  .btn-expanded {
-    display: flex;
-    justify-content: end;
-    font-size: 14px;
-    line-height: 20px;
-    color: #002d72;
-    margin-bottom: 16px;
-    padding-right: 10px;
-  }
   .cmp-accordion {
     border-top: 1px solid black;
   }
- 
-  #toggleAccordion {
-    border: none;
-    background: none;
-  }
-  #toggleAccordion:hover {
-    cursor: pointer;
-  }
+
   .cmp-accordion__button .cmp-accordion__icon::before {
     content: "+";
     font-size: 30px;

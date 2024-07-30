@@ -9,20 +9,10 @@
     font-family: sans-serif;
   }
 
-  .btn-expanded {
-    display: none;
-  }
   .cmp-accordion {
     border-top: 1px solid black;
   }
- 
-  #toggleAccordion {
-    border: none;
-    background: none;
-  }
-  #toggleAccordion:hover {
-    cursor: pointer;
-  }
+
   .cmp-accordion__button .cmp-accordion__icon::before {
     content: "+";
     font-size: 30px;

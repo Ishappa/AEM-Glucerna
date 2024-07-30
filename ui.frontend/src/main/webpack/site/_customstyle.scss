@@ -346,9 +346,11 @@ Image Hide in tablet and mobile view */
 
 
 
-.image-center{
-    .cmp-image{
-        text-align:center;
+  .image-center{
+    @media (max-width:768px){
+        .cmp-image{
+            text-align:center;
+        }
     }
 }
 

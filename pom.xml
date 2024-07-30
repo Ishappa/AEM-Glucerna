@@ -57,7 +57,7 @@
             
     <aem.host>localhost</aem.host>
             
-    <aem.port>4502</aem.port>
+    <aem.port>8082</aem.port>
             
     <aem.publish.host>localhost</aem.publish.host>
             
@@ -74,6 +74,12 @@
     <frontend-maven-plugin.version>1.12.0</frontend-maven-plugin.version>
             
     <core.wcm.components.version>2.19.0</core.wcm.components.version>
+
+    <core.forms.components.version>2.0.6</core.forms.components.version>
+
+    <core.forms.components.af.version>2.0.6</core.forms.components.af.version>
+
+    <aem.forms.sdk.api>2024.07.05.00-240700</aem.forms.sdk.api>
             
     <bnd.version>5.1.2</bnd.version>
             
@@ -998,7 +1004,62 @@ Bundle-DocURL:
         <version>${core.wcm.components.version}</version>
                     
       </dependency>
-                  
+
+      <!-- AEM Forms Dependencies -->
+
+      <dependency>
+
+        <groupId>com.adobe.aem</groupId>
+
+        <artifactId>aem-forms-sdk-api</artifactId>
+
+        <version>${aem.forms.sdk.api}</version>
+
+      </dependency>
+
+      <dependency>
+
+        <groupId>com.adobe.aem</groupId>
+
+        <artifactId>core-forms-components-apps</artifactId>
+
+        <type>zip</type>
+
+        <version>${core.forms.components.version}</version>
+
+      </dependency>
+
+      <dependency>
+
+        <groupId>com.adobe.aem</groupId>
+
+        <artifactId>core-forms-components-core</artifactId>
+
+        <version>${core.forms.components.version}</version>
+
+      </dependency>
+
+      <dependency>
+
+        <groupId>com.adobe.aem</groupId>
+
+        <artifactId>core-forms-components-af-apps</artifactId>
+
+        <type>zip</type>
+
+        <version>${core.forms.components.af.version}</version>
+
+      </dependency>
+
+      <dependency>
+
+        <groupId>com.adobe.aem</groupId>
+
+        <artifactId>core-forms-components-af-core</artifactId>
+
+        <version>${core.forms.components.af.version}</version>
+
+      </dependency>
       <!-- Testing -->
                   
       <dependency>

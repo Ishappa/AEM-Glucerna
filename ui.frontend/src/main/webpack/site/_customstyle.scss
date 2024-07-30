@@ -321,3 +321,33 @@ Image Hide in tablet and mobile view */
     display:none;
    }
  }
+
+
+
+ .image-flavours{
+     margin-left: auto !important;
+     margin-right: auto !important;
+     @media (max-width: 767px) {
+         .col-md-3 {
+
+             max-width: 34% !important;
+         }
+         .cmp-image__image {
+         height: 98px !important;
+         width: 98px !important;
+     }
+     }
+     @media (max-width: 436px) {
+             .col-md-3{
+                  max-width: 47% !important;
+             }
+     }
+  }
+
+
+
+.image-center{
+    .cmp-image{
+        text-align:center;
+    }
+}

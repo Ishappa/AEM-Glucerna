@@ -1,26 +1,3 @@
-/*  document.addEventListener("DOMContentLoaded", function() {
-        const listHeaders = document.querySelectorAll(".list h6");
-        const lists = document.querySelectorAll(".list");
-       
-
-        listHeaders.forEach(header => {
-            header.addEventListener("click", function() {
-                const parentList = this.parentElement;
-                const button = this.querySelector("button");
-
-                if (parentList.classList.contains("active")) {
-                    parentList.classList.remove("active");
-                    button.classList.remove("rotated");
-                } else {
-                    lists.forEach(list => list.classList.remove("active"));
-                    listHeaders.forEach(h => h.querySelector("button").classList.remove("rotated"));
-
-                    parentList.classList.add("active");
-                    button.classList.add("rotated");
-                }
-            });
-        });
-    });*/
 
 document.addEventListener("DOMContentLoaded", function () {
   const listHeaders = document.querySelectorAll(".list h6");

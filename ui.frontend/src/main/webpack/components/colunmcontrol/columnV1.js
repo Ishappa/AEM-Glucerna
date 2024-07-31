@@ -1,5 +1,5 @@
 
-jQuery.noConflict();
+
 jQuery(document).ready(function($) {
     if (typeof Granite === 'undefined' || typeof Granite.author === 'undefined') {
         const originalHtmlMap = {};

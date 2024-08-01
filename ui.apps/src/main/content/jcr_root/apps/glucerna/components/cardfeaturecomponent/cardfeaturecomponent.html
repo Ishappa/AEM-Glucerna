@@ -1,20 +1,23 @@
 <div class="card_feature_parent">
-    <div class="card_feauture" data-sly-use.mymodel="com.adobe.aem.guides.glucerna.core.models.CardFeature">
-        <div class="card_feauture_left">
-            <div class="card_feature_left_title">
-                <p style="margin:0px;">${mymodel.featureTitle}</p>
+    <div data-sly-use.mymodel="com.adobe.aem.guides.glucerna.core.models.CardFeature"
+         class="card_feauture videoTrigger" data-modal-id="modal-${mymodel.uniqueId}"
+         data-enablepopup="${mymodel.select=='video'? 'true':'false'}">
+            <div class="card_feauture_left">
+                <div class="card_feature_left_title">
+                    <p style="margin:0px;">${mymodel.featureTitle}</p>
+                    <a href="${mymodel.navigationLink}.html" target="${mymodel.isSameTab}">${mymodel.linkLabel}</a>
+                </div>
             </div>
-        </div>
-        <div class="card_feauture_right videoTrigger" data-modal-id="modal-${mymodel.uniqueId}" data-enablepopup="${mymodel.select=='video'? 'true':'false'}">
-            <sly data-sly-test="${mymodel.select=='video'}" data-sly-unwrap>
-                <img src="${mymodel.poster}" alt="Video Thumbnail">
-            </sly>
-            <sly data-sly-test="${mymodel.select=='pdf'}">
-                <a href="${mymodel.pdfpath}" target="${mymodel.isSameTab}">
-                    <img src="${mymodel.poster}" alt="PDF Thumbnail">
-                </a>
-            </sly>
-        </div>
+            <div class="card_feauture_right">
+                <sly data-sly-test="${mymodel.select=='video'}" data-sly-unwrap>
+                    <img src="${mymodel.poster}" alt="Video Thumbnail">
+                </sly>
+                <sly data-sly-test="${mymodel.select=='pdf'}">
+                    <a href="${mymodel.navigationLink}.html" target="${mymodel.isSameTab}">
+                        <img src="${mymodel.poster}" alt="PDF Thumbnail">
+                    </a>
+                </sly>
+            </div>
     </div>
 </div>
 

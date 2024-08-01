@@ -1,5 +1,4 @@
-
-
+jQuery.noConflict();
 jQuery(document).ready(function($) {
     if (typeof Granite === 'undefined' || typeof Granite.author === 'undefined') {
         const originalHtmlMap = {};
@@ -47,7 +46,7 @@ jQuery(document).ready(function($) {
 
         function updateColumns() {
             const width = $(window).width();
-
+                console.log("update columns");
             $('.container_items').each(function() {
                 const $container = $(this);
                 const $row = $container.closest('.rows');

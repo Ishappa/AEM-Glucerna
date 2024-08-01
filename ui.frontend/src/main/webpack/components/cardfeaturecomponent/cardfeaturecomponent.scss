@@ -1,4 +1,6 @@
-.card_feature_parent {
+.cardfeaturecomponentV1{
+
+      .card_feature_parent {
             display: flex;
             justify-content: center;
         }
@@ -24,12 +26,22 @@
             padding: 14px;
         }
 
+        .card_feature_left_title a{
+           display:none;
+        }
+
         .card_feauture_right > img,
         .card_feauture_right > a > img {
             height: 100%;
             width: auto;
             border-top-right-radius: 6px;
             border-top-left-radius: 6px;
+        }
+
+        @media screen and (max-width: 426px) {
+            .play-butn-css{
+                font-size: 2.5em !important;
+            }
         }
 
         @media screen and (max-width: 768px) {
@@ -134,7 +146,7 @@
 
         .modal-body video {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
         .no-scroll {
           overflow: hidden;
@@ -159,3 +171,4 @@
        .modal-body:hover .play-butn-css {
             background-color: rgb(255 0 119 / 94%);
          }
+        }

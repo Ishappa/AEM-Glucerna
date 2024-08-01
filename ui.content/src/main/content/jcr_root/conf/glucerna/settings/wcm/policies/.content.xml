@@ -19,6 +19,63 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1720689685672>
             </breadcrumb>
+            <cardfeaturecomponent jcr:primaryType="nt:unstructured">
+                <policy_1721815374873
+                        jcr:lastModified="{Date}2024-08-01T13:21:57.179+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="CardFeaturepolicy1"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content  jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                                cq:styleGroupLabel="Margin Bottom"
+                                cq:styleGroupMultiple="true"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="teaser-recipe"
+                                        cq:styleId="1721815393828"
+                                        cq:styleLabel="Margin_bottom-30px(Above768px))"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                                cq:styleGroupLabel="Card Feature Variation"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="cardfeaturecomponentV1"
+                                        cq:styleId="1722498609469"
+                                        cq:styleLabel="V1 (Path to Progress Page)"
+                                        jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                        cq:styleClasses="cardfeaturecomponentV2"
+                                        cq:styleId="1722498642186"
+                                        cq:styleLabel="V2"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                                cq:styleGroupLabel="Padding Top Bottom"
+                                cq:styleGroupMultiple="true"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="padding-top-20"
+                                        cq:styleId="1722498678077"
+                                        cq:styleLabel="Padding Top 20px"
+                                        jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                        cq:styleClasses="padding-bottom-20"
+                                        cq:styleId="1722498693009"
+                                        cq:styleLabel="Padding Bottom 20px"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
+                    </cq:styleGroups>
+                </policy_1721815374873>
+            </cardfeaturecomponent>
             <form jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
                     <form-container

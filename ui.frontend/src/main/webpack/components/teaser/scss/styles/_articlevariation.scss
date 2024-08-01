@@ -1,0 +1,31 @@
+.articles{
+  .cmp-teaser{
+     display:flex;
+	 flex-direction:column-reverse;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24186);
+        .cmp-image__image {
+        height: auto;
+        width: 100%;
+        display: block;
+        }
+        &__content{
+        	min-height: 150px;
+            padding: 16px 16px 24px 16px;
+                @media screen and (max-width:425px){
+                     min-height:0px;
+                }
+        }
+        &__description h3{
+            color:#002d72;
+            margin:0 0 16px 0px;
+            font-size: 22px;
+            line-height: 32px;
+        }
+        &__action-container a{
+            color:#007acc;
+            font-size: .875rem;
+            font-weight: bold;
+            line-height: 1.25rem;
+        }
+   }
+}

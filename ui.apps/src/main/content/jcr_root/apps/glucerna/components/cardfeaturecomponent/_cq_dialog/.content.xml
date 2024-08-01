@@ -30,10 +30,10 @@
                         fieldLabel="Select"
                         name="./select">
                         <items jcr:primaryType="nt:unstructured">
-                            <ispdf
+                            <ispdforarticle
                                 jcr:primaryType="nt:unstructured"
                                 name="./pdf"
-                                text="PDF"
+                                text="PDF or Article"
                                 value="pdf"/>
                             <isvideo
                                 jcr:primaryType="nt:unstructured"
@@ -45,30 +45,25 @@
                             jcr:primaryType="nt:unstructured"
                             cq-dialog-dropdown-showhide-target=".showhidetargets"/>
                     </select>
-                    <pdf
-                        granite:class="showhidetargets"
+                    <linklabel
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/container">
-                        <items jcr:primaryType="nt:unstructured">
-                            <pdfpath
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                fieldLabel="PDF Link"
-                                name="./pdfpath"
-                                rootPath="/content/dam"/>
-                            <issametab
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                checked="false"
-                                name="./isSameTab"
-                                text="Same Tab?"
-                                uncheckedValue="_blank"
-                                value="_self"/>
-                        </items>
-                        <granite:data
-                            jcr:primaryType="nt:unstructured"
-                            showhidetargetvalue="pdf"/>
-                    </pdf>
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Link label"
+                        name="./linkLabel"/>
+                    <navigationlink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldLabel="Navigate To"
+                        name="./navigationLink"
+                        rootPath="/content"/>
+                    <issametab
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        checked="false"
+                        name="./isSameTab"
+                        text="Same Tab?"
+                        uncheckedValue="_blank"
+                        value="_self"/>
                 </items>
             </column>
         </items>

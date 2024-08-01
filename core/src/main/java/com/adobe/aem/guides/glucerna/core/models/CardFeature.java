@@ -11,8 +11,9 @@ public class CardFeature {
     private @ValueMapValue String featureTitle;
     private @ValueMapValue String poster;
     private @ValueMapValue String select;
-    private @ValueMapValue String pdfpath;
     private @ValueMapValue String isSameTab;
+    private @ValueMapValue String linkLabel;
+    private @ValueMapValue String navigationLink;
     private Random rand = new Random();
     private  String uniqueId=""+rand.nextInt();
 
@@ -28,14 +29,18 @@ public class CardFeature {
         return select;
     }
 
-    public String getPdfpath() {
-        return pdfpath;
-    }
-
     public String getIsSameTab() {
         return isSameTab;
     }
     public String getUniqueId(){
         return uniqueId;
+    }
+
+    public String getLinkLabel() {
+        return linkLabel;
+    }
+
+    public String getNavigationLink() {
+        return navigationLink;
     }
 }

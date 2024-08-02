@@ -7,19 +7,8 @@ document.addEventListener('click', (event) => {
             video.setAttribute('controls', 'controls');
             video.play();
             event.target.style.display = 'none';
-
             video.addEventListener('play', () => {
                 event.target.style.display = 'none';
-            });
-
-            video.addEventListener('pause', () => {
-                if (video.currentTime === 0 || video.currentTime === video.duration) {
-                    event.target.style.display = 'block';
-                }
-            });
-
-            video.addEventListener('ended', () => {
-                event.target.style.display = 'block';
             });
         }
     }

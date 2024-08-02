@@ -14,6 +14,7 @@
       const videoIframe = modal.querySelector("iframe");
       if (video) {
         video.load();
+        video.controls=false;
       }
       if (videoIframe) {
         videoIframe.src = videoIframe.src;
@@ -25,20 +26,25 @@
       const trigger = event.target.closest(triggerSelector);
       if (!trigger) return;
       const modalId = trigger.getAttribute("data-modal-id");
-      console.log("modalId" + modalId);
       const modal = document.getElementById(modalId);
-      console.log("modal" + modal);
       const enablePopup = trigger.getAttribute("data-enablepopup");
       const playButton = modal.querySelector(".play-butn-css");
+      const playButtonVidC = modal.querySelector(".play-button");
       const videoContainer = modal.querySelector(".video-div");
       const videoIframe = videoContainer.querySelector("iframe");
       const videoSrc = videoIframe ? videoIframe.src : "";
 
       const isYouTube = videoSrc.includes("youtube.com");
+      const video = videoContainer.querySelector("video");
+
 
       if (enablePopup === "true") {
         event.preventDefault();
-        modal.style.display = "block";
+        modal.style.display = "flex";
+        modal.style.alignItems="center";
+        if(video && playButtonVidC.style.display ==="none"){
+            playButtonVidC.style.display="block";
+        }
         document.body.classList.add("no-scroll");
 
         window.onclick = (event) => {
@@ -63,11 +69,14 @@
             playButton.style.display = "none";
           }
         } else {
-          const video = videoContainer.querySelector("video");
-
           if (video) {
             video.addEventListener("mouseover", () => {
-              video.controls = true;
+              if (playButton.style.display === "" || playButton.style.display === "block") {
+                  video.controls = false;
+              }
+               else{
+                    video.controls = true;
+                }
             });
 
             video.addEventListener("mouseout", () => {
@@ -83,18 +92,6 @@
               playButton.style.display = "none";
             });
 
-            video.addEventListener("pause", () => {
-              if (
-                video.currentTime === 0 ||
-                video.currentTime === video.duration
-              ) {
-                playButton.style.display = "block";
-              }
-            });
-
-            video.addEventListener("ended", () => {
-              playButton.style.display = "block";
-            });
           }
         }
       }

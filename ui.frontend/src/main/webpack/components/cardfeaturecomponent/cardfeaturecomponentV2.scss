@@ -68,14 +68,6 @@
                     }
             }
 
-
-            @media screen and (min-width: 769px) and (max-width: 993px) {
-                .card_feauture_right > img,
-                .card_feauture_right > a > img {
-                    object-fit:cover;
-                }
-            }
-
             .modal {
                 display: none;
                 position: fixed;
@@ -90,9 +82,9 @@
 
             .modal-content {
                 position: relative;
-                margin: 1.75rem auto;
+                margin: auto;
                 padding: 0;
-                width: 80%;
+                width: 90%;
                 max-width: 650px;
                 max-height: 90vh;
                 overflow-y: auto;
